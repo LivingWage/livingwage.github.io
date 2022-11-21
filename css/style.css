@@ -1,0 +1,149 @@
+body {
+  background:linear-gradient(0deg, rgba(1, 160, 170, 0.7), rgba(1, 160, 170, 1)), url(https://livingwageforfamilies.netlify.app/img/bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#logo img {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    width: 85%;
+    margin: auto;
+    padding: 2%;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    width: 50%;
+    margin: auto;
+    padding: 2%;
+    margin-bottom: 50px;
+  }
+}
+
+.selector h1, .selector h2, .selector h3 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+p a {
+  color: white;
+}
+
+.sectionHeading {
+  color: white;
+}
+
+#heading {
+  font-size: 60px;
+  line-height: 0.8;
+  color: white;
+}
+
+#footer {
+  font-size: 10px;
+  position: fixed;
+  background: rgba(1, 160, 170);
+  width: 100%;
+  text-align: center;
+  padding: 8px;
+  bottom: 0px;
+  left: 0px;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: ratio-display, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "basic-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+select, input {
+  padding: 8px;
+  border-radius: 3px;
+  border: none;
+  font-family: basic-sans, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#selectors {
+  background: rgba(1, 160, 170);
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+  border-radius: 5px;
+}
+
+#payRiseBox {
+  background: #b1dfdf;
+  display: block;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  color: #2a3247 !important;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.selector {
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#communitySelector {
+  background: rgba(1, 160, 170);
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+  border-radius: 5px;
+}
+
+#wageSelector {
+  background: rgba(1, 160, 170);
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+  border-radius: 5px;
+}
+
+.currencyinput {
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+  padding: 8px;
+  font-size: 14px;
+}
