@@ -1,0 +1,117 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Living Wage Employer Benefit Calculator</title>
+  <meta name="description" content="Use this tool to calculate the pay rise needed to achieve your local Living Wage in BC.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://livingwageforfamilies.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Living Wage Employer Benefit Calculator">
+  <meta property="og:description" content="Use this tool to calculate the pay rise needed to achieve your local Living Wage in BC.">
+  <meta property="og:image" content="https://livingwageforfamilies.netlify.app/img/sharer.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta property="twitter:url" content="https://livingwageforfamilies.netlify.app/">
+  <meta name="twitter:card" content="Use this tool to calculate the pay rise needed to achieve your local Living Wage in BC.">
+  <meta name="twitter:title" content="Living Wage Employer Benefit Calculator">
+  <meta name="twitter:description" content="Use this tool to calculate the pay rise needed to achieve your local Living Wage in BC.">
+  <meta name="twitter:image" content="https://livingwageforfamilies.netlify.app/img/sharer.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Adobe Fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/qhr0jew.css">
+
+  <!-- CSS Link -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
+
+<script src="js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+</head>
+
+<body>
+<a id="logo" href="https://www.livingwageforfamilies.ca" target="_blank"><img src="img/logo.svg" width="200px"/></a>
+<main>
+
+  <h1 id="heading">Living Wage Employer Benefit Calculator <span id="communityName"></span></h1>
+  <p>A living wage can be made up of base wage and benefits. Enter information about the benefits you offer and we can calculate the value of your benefits and how much you need to pay staff to reach the living wage.<br /><br />(Please note that currently this calculator is just for Vancouver and Victoria - we will be adding additional communities in the next few weeks)</a>.
+
+<div class="selector" id="communitySelector">
+<h3>Please select your community:<br/>
+<select name="community" id="community" onChange="calculateValues()">
+  <option value="Metro Vancouver">Metro Vancouver</option>
+  <option value="Victoria">Victoria</option>
+</select>
+</h3>
+</div>
+
+<h2 class="sectionHeading">Living Wage Rate for this Community: <span id="livingWageRate"></span></h2>
+
+<div id="selectors">
+
+<div class="selector" id="healthSelector">
+<p>Please select what percentage of extended health premiums is covered by the employer:<br />
+<select name="healthBenefits" id="healthBenefits" onChange="calculateValues()">
+  <option value=100>100% coverage</option>
+  <option value=80>80% coverage</option>
+  <option value=75>75% coverage</option>
+  <option value=70>70% coverage</option>
+  <option value=50>50% coverage</option>
+  <option value=25>25% coverage</option>
+  <option value=0>0% coverage</option>
+</select></p>
+  <h3>Calculated hourly benefit amount - extended health and dental: <span id="benefitRateHealth"></span></h3>
+  </div>
+
+  <div class="selector" id="healthSelector">
+<p>Number of days offered of paid vacation, sick leave, personal days etc., beyond the statutory minimum (up to a maximum of ten days):<br />
+<select name="vacationBenefits" id="vacationBenefits" onChange="calculateValues()">
+  <option value="0">0 Days</option>
+  <option value="1">1 Day</option>
+  <option value="2">2 Days</option>
+  <option value="3">3 Days</option>
+  <option value="4">4 Days</option>
+  <option value="5">5 Days</option>
+  <option value="6">6 Days</option>
+  <option value="7">7 Days</option>
+  <option value="8">8 Days</option>
+  <option value="9">9 Days</option>
+  <option value="10">10 Days+</option>
+</select></p>
+    <h3>Calculated hourly benefit amount - extra sick pay or vacation days: <span id="benefitRateVacation"></span></h3>
+    </div>
+
+    <div class="selector" id="otherSelector">
+<p>Value of any other taxable benefits (for example a transit pass, education, child care, cell phone that can be used in spare time):<br />
+   <span class="currencyinput">$<input type="number" name="otherBenefits" id="otherBenefits" onChange="calculateValues()" value="0"/></span></p>
+      <h3>Calculated hourly benefit amount - other taxable benefits: <span id="benefitRateOther"></span></h3>
+    </div>
+</div>
+
+<h2 class="sectionHeading">Total hourly benefit amount: <span id="hourlyBenefitTotal"></span></h2>
+
+<div class="selector" id="wageSelector">
+<p>Enter the hourly wage of your lowest paid member of staff: <br/><span class="currencyinput">$<input type="number" name="lowestWage" id="lowestWage" onChange="calculateValues()" min=15.65 step="any" value="15.65"/><span></p>
+</div>
+
+<div id="payRiseBox"><div><h3>Base wage required to achieve local Living Wage: <span id="wageBenefitsGap"></span></h3></div>
+<div><h3>Current total wage (wage + benefits): <span id="fullWage"></span></h3></div>
+<div><h2>Pay rise needed: <span id="payRise"></span></h2></div></div>
+
+</main>
+
+<p id="footer">© 2022 Living Wage for Families BC. Located on the unceded territories of the xʷməθkʷəy̓əm (Musqueam), Skwxwú7mesh (Squamish) and səl̓ílwətaʔɬ /Selilwitulh (Tsleil-Waututh) Nations. Living Wage for Families BC is a program of Vancity Community Foundation.</p>
+
+</body>
+</html>
