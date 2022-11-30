@@ -65,6 +65,8 @@
 
 <div id="selectors">
 
+<div class="section">
+  <h2>Health Benefits</h2>
 <div class="selector" id="healthSelector">
 <p>Please select what percentage of extended health premiums is covered by the employer:<br />
 <select name="healthBenefits" id="healthBenefits" onChange="calculateValues()">
@@ -82,7 +84,11 @@
   <span class="currencyinput">$<input type="number" name="hbaBenefits" id="hbaBenefits" onChange="calculateValues()" value="0"/></span></p>
      <h3>Calculated hourly benefit amount - other taxable benefits: <span id="benefitRateHBA"></span></h3>
    </div>
+   <p id="healthDisclaimer">Please Note: The contribution that health benefits can make to this calculation has been capped at the value of 100% employer health coverage, in this case <span id="maxHealthValue"></span> per hour. If you have entered health benefits as both a percentage and a Health Benefits Account, the above figures may not match the final calculation shown here.</p>
+ </div>
 
+ <div class="section">
+   <h2>Vacation Benefits</h2>
   <div class="selector" id="vacationSelector">
 <p>Number of days offered of paid vacation, sick leave, personal days etc., beyond the statutory minimum (up to a maximum of ten days):<br />
 <select name="vacationBenefits" id="vacationBenefits" onChange="calculateValues()">
@@ -100,16 +106,19 @@
 </select></p>
     <h3>Calculated hourly benefit amount - extra sick pay or vacation days: <span id="benefitRateVacation"></span></h3>
     </div>
+  </div>
 
+  <div class="section">
+    <h2>Other Benefits</h2>
     <div class="selector" id="otherSelector">
 <p>Value of any other taxable benefits (for example a transit pass, education, child care, cell phone that can be used in spare time):<br />
    <span class="currencyinput">$<input type="number" name="otherBenefits" id="otherBenefits" onChange="calculateValues()" value="0"/></span></p>
       <h3>Calculated hourly benefit amount - other taxable benefits: <span id="benefitRateOther"></span></h3>
     </div>
 </div>
+</div>
 
 <h2 class="sectionHeading">Total hourly benefit amount: <span id="hourlyBenefitTotal"></span></h2>
-<p id="healthDisclaimer">Please Note: The contribution that health benefits can make to this calculation has been capped at the value of 100% employer health coverage, in this case <span id="maxHealthValue"></span> per hour. If you have entered health benefits as both a percentage and a Health Benefits Account, the above figures may not match the final calculation shown here.</p>
 
 <div class="selector" id="wageSelector">
 <p>Enter the hourly wage of your lowest paid member of staff: <br/><span class="currencyinput">$<input type="number" name="lowestWage" id="lowestWage" onChange="calculateValues()" min=15.65 step="any" value="15.65"/><span></p>
