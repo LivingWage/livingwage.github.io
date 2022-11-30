@@ -51,6 +51,21 @@ p a {
   color: white;
 }
 
+.section {
+  margin: 20px;
+  padding: 20px;
+  width: 100%;
+  border: 3px solid white;
+}
+
+.section h2 {
+  color: white;
+}
+
+#healthDisclaimer {
+  font-size: 12px;
+}
+
 #footer {
   font-size: 10px;
   position: fixed;
