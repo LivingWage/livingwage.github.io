@@ -177,7 +177,7 @@ function calculateValues() {
         benefitsVector = 0.00059;
         benefitHBATotal = hbaValue * hbaVector;
         healthBenefitTotal = benefitHealth + benefitHBATotal;
-        healthBenefitsMax = 1.94;
+        healthBenefitsMax = 1.92;
         if (healthBenefitTotal > healthBenefitsMax) {
           healthBenefitTotal = healthBenefitsMax
         }
