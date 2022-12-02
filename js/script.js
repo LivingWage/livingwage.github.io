@@ -47,6 +47,7 @@ function calculateValues() {
     //Creates variables for page elements which need to be filled with visible text.
     const communityName = document.querySelector("#communityName");
     const livingWageRate = document.querySelector("#livingWageRate");
+    const livingWageRate2 = document.querySelector("#livingWageRate2");
     const benefitRateHealth = document.querySelector("#benefitRateHealth");
     const benefitRateHBA = document.querySelector("#benefitRateHBA");
     const maxHealthValue = document.querySelector("#maxHealthValue");
@@ -91,6 +92,7 @@ function calculateValues() {
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
         livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
+        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
         benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
         benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
         maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
@@ -138,6 +140,7 @@ function calculateValues() {
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
         livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
+        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
         benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
         benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
         maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
@@ -185,6 +188,7 @@ function calculateValues() {
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
         livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
+        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
         benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
         benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
         maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
@@ -232,6 +236,7 @@ function calculateValues() {
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
         livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
+        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
         benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
         benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
         maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
@@ -279,6 +284,7 @@ function calculateValues() {
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
         livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
+        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
         benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
         benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
         maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
@@ -326,6 +332,7 @@ function calculateValues() {
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
         livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
+        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
         benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
         benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
         maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
@@ -373,6 +380,7 @@ function calculateValues() {
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
         livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
+        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
         benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
         benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
         maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
