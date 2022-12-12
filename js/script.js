@@ -395,6 +395,726 @@ function calculateValues() {
           payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
         }
         break;
+      case "Prince George":
+        wageRate = 21.19;
+        communityName.innerHTML=" - "+communityText;
+        switch(healthValue) {
+          case "100":
+            benefitHealth = 2.09
+            break;
+          case "75":
+            benefitHealth = 1.49
+            break;
+          case "50":
+            benefitHealth = 0.98
+            break;
+          case "25":
+            benefitHealth = 0.49
+            break;
+          case "0":
+            benefitHealth = 0.00
+            break;
+        }
+        hbaVector = 0.00068;
+        vacationVector = 0.12;
+        benefitsVector = 0.00059;
+        benefitHBATotal = hbaValue * hbaVector;
+        healthBenefitTotal = benefitHealth + benefitHBATotal;
+        healthBenefitsMax = 2.09;
+        if (healthBenefitTotal > healthBenefitsMax) {
+          healthBenefitTotal = healthBenefitsMax
+        }
+        benefitVacation = vacationValue * vacationVector;
+        benefitOther = otherValue * benefitsVector;
+        totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
+        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
+        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
+        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
+        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
+        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
+        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
+        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
+        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
+        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
+        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
+          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+        } else {
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+        }
+        break;
+      case "Grand Forks":
+        wageRate = 20.19;
+        communityName.innerHTML=" - "+communityText;
+        switch(healthValue) {
+          case "100":
+            benefitHealth = 1.93
+            break;
+          case "75":
+            benefitHealth = 1.38
+            break;
+          case "50":
+            benefitHealth = 0.90
+            break;
+          case "25":
+            benefitHealth = 0.45
+            break;
+          case "0":
+            benefitHealth = 0.00
+            break;
+        }
+        hbaVector = 0.00068;
+        vacationVector = 0.11;
+        benefitsVector = 0.00059;
+        benefitHBATotal = hbaValue * hbaVector;
+        healthBenefitTotal = benefitHealth + benefitHBATotal;
+        healthBenefitsMax = 1.93;
+        if (healthBenefitTotal > healthBenefitsMax) {
+          healthBenefitTotal = healthBenefitsMax
+        }
+        benefitVacation = vacationValue * vacationVector;
+        benefitOther = otherValue * benefitsVector;
+        totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
+        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
+        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
+        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
+        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
+        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
+        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
+        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
+        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
+        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
+        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
+          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+        } else {
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+        }
+        break;
+      case "Kamloops":
+        wageRate = 19.19;
+        communityName.innerHTML=" - "+communityText;
+        switch(healthValue) {
+          case "100":
+            benefitHealth = 1.86
+            break;
+          case "75":
+            benefitHealth = 1.30
+            break;
+          case "50":
+            benefitHealth = 0.84
+            break;
+          case "25":
+            benefitHealth = 0.60
+            break;
+          case "0":
+            benefitHealth = 0.00
+            break;
+        }
+        hbaVector = 0.00068;
+        vacationVector = 0.11;
+        benefitsVector = 0.00059;
+        benefitHBATotal = hbaValue * hbaVector;
+        healthBenefitTotal = benefitHealth + benefitHBATotal;
+        healthBenefitsMax = 1.86;
+        if (healthBenefitTotal > healthBenefitsMax) {
+          healthBenefitTotal = healthBenefitsMax
+        }
+        benefitVacation = vacationValue * vacationVector;
+        benefitOther = otherValue * benefitsVector;
+        totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
+        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
+        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
+        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
+        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
+        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
+        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
+        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
+        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
+        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
+        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
+          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+        } else {
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+        }
+        break;
+      case "Revelstoke":
+        wageRate = 23.60;
+        communityName.innerHTML=" - "+communityText;
+        switch(healthValue) {
+          case "100":
+            benefitHealth = 1.94
+            break;
+          case "75":
+            benefitHealth = 1.39
+            break;
+          case "50":
+            benefitHealth = 0.90
+            break;
+          case "25":
+            benefitHealth = 0.46
+            break;
+          case "0":
+            benefitHealth = 0.00
+            break;
+        }
+        hbaVector = 0.00068;
+        vacationVector = 0.13;
+        benefitsVector = 0.00059;
+        benefitHBATotal = hbaValue * hbaVector;
+        healthBenefitTotal = benefitHealth + benefitHBATotal;
+        healthBenefitsMax = 1.94;
+        if (healthBenefitTotal > healthBenefitsMax) {
+          healthBenefitTotal = healthBenefitsMax
+        }
+        benefitVacation = vacationValue * vacationVector;
+        benefitOther = otherValue * benefitsVector;
+        totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
+        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
+        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
+        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
+        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
+        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
+        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
+        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
+        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
+        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
+        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
+          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+        } else {
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+        }
+        break;
+      case "Columbia Valley":
+        wageRate = 21.85;
+        communityName.innerHTML=" - "+communityText;
+        switch(healthValue) {
+          case "100":
+            benefitHealth = 1.93
+            break;
+          case "75":
+            benefitHealth = 1.37
+            break;
+          case "50":
+            benefitHealth = 0.89
+            break;
+          case "25":
+            benefitHealth = 0.45
+            break;
+          case "0":
+            benefitHealth = 0.00
+            break;
+        }
+        hbaVector = 0.00068;
+        vacationVector = 0.12;
+        benefitsVector = 0.00059;
+        benefitHBATotal = hbaValue * hbaVector;
+        healthBenefitTotal = benefitHealth + benefitHBATotal;
+        healthBenefitsMax = 1.93;
+        if (healthBenefitTotal > healthBenefitsMax) {
+          healthBenefitTotal = healthBenefitsMax
+        }
+        benefitVacation = vacationValue * vacationVector;
+        benefitOther = otherValue * benefitsVector;
+        totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
+        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
+        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
+        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
+        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
+        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
+        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
+        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
+        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
+        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
+        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
+          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+        } else {
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+        }
+        break;
+      case "Powell River":
+        wageRate = 23.33;
+        communityName.innerHTML=" - "+communityText;
+        switch(healthValue) {
+          case "100":
+            benefitHealth = 2.06
+            break;
+          case "75":
+            benefitHealth = 1.45
+            break;
+          case "50":
+            benefitHealth = 0.94
+            break;
+          case "25":
+            benefitHealth = 0.46
+            break;
+          case "0":
+            benefitHealth = 0.00
+            break;
+        }
+        hbaVector = 0.00068;
+        vacationVector = 0.13;
+        benefitsVector = 0.00059;
+        benefitHBATotal = hbaValue * hbaVector;
+        healthBenefitTotal = benefitHealth + benefitHBATotal;
+        healthBenefitsMax = 2.06;
+        if (healthBenefitTotal > healthBenefitsMax) {
+          healthBenefitTotal = healthBenefitsMax
+        }
+        benefitVacation = vacationValue * vacationVector;
+        benefitOther = otherValue * benefitsVector;
+        totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
+        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
+        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
+        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
+        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
+        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
+        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
+        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
+        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
+        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
+        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
+          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+        } else {
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+        }
+        break;
+      case "Greater Trail":
+        wageRate = 21.13;
+        communityName.innerHTML=" - "+communityText;
+        switch(healthValue) {
+          case "100":
+            benefitHealth = 1.94
+            break;
+          case "75":
+            benefitHealth = 1.38
+            break;
+          case "50":
+            benefitHealth = 0.91
+            break;
+          case "25":
+            benefitHealth = 0.53
+            break;
+          case "0":
+            benefitHealth = 0.00
+            break;
+        }
+        hbaVector = 0.00068;
+        vacationVector = 0.12;
+        benefitsVector = 0.00059;
+        benefitHBATotal = hbaValue * hbaVector;
+        healthBenefitTotal = benefitHealth + benefitHBATotal;
+        healthBenefitsMax = 1.94;
+        if (healthBenefitTotal > healthBenefitsMax) {
+          healthBenefitTotal = healthBenefitsMax
+        }
+        benefitVacation = vacationValue * vacationVector;
+        benefitOther = otherValue * benefitsVector;
+        totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
+        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
+        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
+        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
+        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
+        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
+        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
+        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
+        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
+        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
+        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
+          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+        } else {
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+        }
+        break;
+      case "Dawson Creek":
+        wageRate = 20.53;
+        communityName.innerHTML=" - "+communityText;
+        switch(healthValue) {
+          case "100":
+            benefitHealth = 2.09
+            break;
+          case "75":
+            benefitHealth = 1.49
+            break;
+          case "50":
+            benefitHealth = 0.98
+            break;
+          case "25":
+            benefitHealth = 0.49
+            break;
+          case "0":
+            benefitHealth = 0.00
+            break;
+        }
+        hbaVector = 0.00068;
+        vacationVector = 0.12;
+        benefitsVector = 0.00064;
+        benefitHBATotal = hbaValue * hbaVector;
+        healthBenefitTotal = benefitHealth + benefitHBATotal;
+        healthBenefitsMax = 2.09;
+        if (healthBenefitTotal > healthBenefitsMax) {
+          healthBenefitTotal = healthBenefitsMax
+        }
+        benefitVacation = vacationValue * vacationVector;
+        benefitOther = otherValue * benefitsVector;
+        totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
+        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
+        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
+        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
+        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
+        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
+        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
+        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
+        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
+        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
+        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
+          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+        } else {
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+        }
+        break;
+      case "Golden":
+        wageRate = 25.56;
+        communityName.innerHTML=" - "+communityText;
+        switch(healthValue) {
+          case "100":
+            benefitHealth = 1.95
+            break;
+          case "75":
+            benefitHealth = 1.39
+            break;
+          case "50":
+            benefitHealth = 0.90
+            break;
+          case "25":
+            benefitHealth = 0.46
+            break;
+          case "0":
+            benefitHealth = 0.00
+            break;
+        }
+        hbaVector = 0.00068;
+        vacationVector = 0.15;
+        benefitsVector = 0.00059;
+        benefitHBATotal = hbaValue * hbaVector;
+        healthBenefitTotal = benefitHealth + benefitHBATotal;
+        healthBenefitsMax = 1.95;
+        if (healthBenefitTotal > healthBenefitsMax) {
+          healthBenefitTotal = healthBenefitsMax
+        }
+        benefitVacation = vacationValue * vacationVector;
+        benefitOther = otherValue * benefitsVector;
+        totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
+        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
+        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
+        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
+        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
+        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
+        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
+        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
+        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
+        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
+        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
+          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+        } else {
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+        }
+        break;
+      case "Cowichan Valley":
+        wageRate = 23.53;
+        communityName.innerHTML=" - "+communityText;
+        switch(healthValue) {
+          case "100":
+            benefitHealth = 1.94
+            break;
+          case "75":
+            benefitHealth = 1.39
+            break;
+          case "50":
+            benefitHealth = 0.90
+            break;
+          case "25":
+            benefitHealth = 0.45
+            break;
+          case "0":
+            benefitHealth = 0.00
+            break;
+        }
+        hbaVector = 0.00068;
+        vacationVector = 0.13;
+        benefitsVector = 0.00059;
+        benefitHBATotal = hbaValue * hbaVector;
+        healthBenefitTotal = benefitHealth + benefitHBATotal;
+        healthBenefitsMax = 1.94;
+        if (healthBenefitTotal > healthBenefitsMax) {
+          healthBenefitTotal = healthBenefitsMax
+        }
+        benefitVacation = vacationValue * vacationVector;
+        benefitOther = otherValue * benefitsVector;
+        totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
+        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
+        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
+        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
+        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
+        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
+        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
+        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
+        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
+        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
+        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
+          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+        } else {
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+        }
+        break;
+      case "Fernie":
+        wageRate = 23.58;
+        communityName.innerHTML=" - "+communityText;
+        switch(healthValue) {
+          case "100":
+            benefitHealth = 2.02
+            break;
+          case "75":
+            benefitHealth = 1.41
+            break;
+          case "50":
+            benefitHealth = 0.89
+            break;
+          case "25":
+            benefitHealth = 0.44
+            break;
+          case "0":
+            benefitHealth = 0.00
+            break;
+        }
+        hbaVector = 0.00068;
+        vacationVector = 0.13;
+        benefitsVector = 0.00059;
+        benefitHBATotal = hbaValue * hbaVector;
+        healthBenefitTotal = benefitHealth + benefitHBATotal;
+        healthBenefitsMax = 2.02;
+        if (healthBenefitTotal > healthBenefitsMax) {
+          healthBenefitTotal = healthBenefitsMax
+        }
+        benefitVacation = vacationValue * vacationVector;
+        benefitOther = otherValue * benefitsVector;
+        totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
+        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
+        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
+        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
+        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
+        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
+        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
+        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
+        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
+        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
+        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
+          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+        } else {
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+        }
+        break;
+      case "Prince Rupert":
+        wageRate = 22.69;
+        communityName.innerHTML=" - "+communityText;
+        switch(healthValue) {
+          case "100":
+            benefitHealth = 2.11
+            break;
+          case "75":
+            benefitHealth = 1.51
+            break;
+          case "50":
+            benefitHealth = 0.98
+            break;
+          case "25":
+            benefitHealth = 0.49
+            break;
+          case "0":
+            benefitHealth = 0.00
+            break;
+        }
+        hbaVector = 0.00068;
+        vacationVector = 0.13;
+        benefitsVector = 0.00059;
+        benefitHBATotal = hbaValue * hbaVector;
+        healthBenefitTotal = benefitHealth + benefitHBATotal;
+        healthBenefitsMax = 2.11;
+        if (healthBenefitTotal > healthBenefitsMax) {
+          healthBenefitTotal = healthBenefitsMax
+        }
+        benefitVacation = vacationValue * vacationVector;
+        benefitOther = otherValue * benefitsVector;
+        totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
+        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
+        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
+        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
+        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
+        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
+        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
+        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
+        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
+        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
+        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
+          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+        } else {
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+        }
+        break;
+      case "Cranbrook":
+        wageRate = 21.90;
+        communityName.innerHTML=" - "+communityText;
+        switch(healthValue) {
+          case "100":
+            benefitHealth = 2.09
+            break;
+          case "75":
+            benefitHealth = 1.49
+            break;
+          case "50":
+            benefitHealth = 0.97
+            break;
+          case "25":
+            benefitHealth = 0.48
+            break;
+          case "0":
+            benefitHealth = 0.00
+            break;
+        }
+        hbaVector = 0.00068;
+        vacationVector = 0.12;
+        benefitsVector = 0.00059;
+        benefitHBATotal = hbaValue * hbaVector;
+        healthBenefitTotal = benefitHealth + benefitHBATotal;
+        healthBenefitsMax = 2.09;
+        if (healthBenefitTotal > healthBenefitsMax) {
+          healthBenefitTotal = healthBenefitsMax
+        }
+        benefitVacation = vacationValue * vacationVector;
+        benefitOther = otherValue * benefitsVector;
+        totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
+        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
+        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
+        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
+        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
+        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
+        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
+        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
+        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
+        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
+        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
+          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+        } else {
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+        }
+        break;
+      case "Castlegar":
+        wageRate = 20.90;
+        communityName.innerHTML=" - "+communityText;
+        switch(healthValue) {
+          case "100":
+            benefitHealth = 1.92
+            break;
+          case "75":
+            benefitHealth = 1.36
+            break;
+          case "50":
+            benefitHealth = 0.90
+            break;
+          case "25":
+            benefitHealth = 0.46
+            break;
+          case "0":
+            benefitHealth = 0.00
+            break;
+        }
+        hbaVector = 0.00068;
+        vacationVector = 0.12;
+        benefitsVector = 0.00059;
+        benefitHBATotal = hbaValue * hbaVector;
+        healthBenefitTotal = benefitHealth + benefitHBATotal;
+        healthBenefitsMax = 1.92;
+        if (healthBenefitTotal > healthBenefitsMax) {
+          healthBenefitTotal = healthBenefitsMax
+        }
+        benefitVacation = vacationValue * vacationVector;
+        benefitOther = otherValue * benefitsVector;
+        totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
+        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
+        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
+        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
+        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
+        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
+        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
+        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
+        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
+        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
+        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
+          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+        } else {
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+        }
+        break;
+      case "Daajing Gids":
+        wageRate = 25.87;
+        communityName.innerHTML=" - "+communityText;
+        switch(healthValue) {
+          case "100":
+            benefitHealth = 2.03
+            break;
+          case "75":
+            benefitHealth = 1.43
+            break;
+          case "50":
+            benefitHealth = 0.91
+            break;
+          case "25":
+            benefitHealth = 0.46
+            break;
+          case "0":
+            benefitHealth = 0.00
+            break;
+        }
+        hbaVector = 0.00068;
+        vacationVector = 0.15;
+        benefitsVector = 0.000625;
+        benefitHBATotal = hbaValue * hbaVector;
+        healthBenefitTotal = benefitHealth + benefitHBATotal;
+        healthBenefitsMax = 2.03;
+        if (healthBenefitTotal > healthBenefitsMax) {
+          healthBenefitTotal = healthBenefitsMax
+        }
+        benefitVacation = vacationValue * vacationVector;
+        benefitOther = otherValue * benefitsVector;
+        totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
+        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
+        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
+        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
+        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
+        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
+        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
+        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
+        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
+        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
+        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
+          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+        } else {
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+        }
+        break;
     }
   }
   document.addEventListener("DOMContentLoaded", function() {
