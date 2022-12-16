@@ -151,14 +151,6 @@ input[type=number] {
   border-radius: 5px;
 }
 
-#wageSelector {
-  background: rgba(1, 160, 170);
-  display: flex;
-  flex-wrap: wrap;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
-  border-radius: 5px;
-}
-
 .currencyinput {
   background-color: white;
   color: black;
