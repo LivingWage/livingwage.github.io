@@ -12,6 +12,9 @@ body {
   border: 2px white solid;
   border-radius: 3px;
   font-family: "basic-sans", sans-serif;
+  width: 100%;
+  text-align: center;
+  color: white;
   font-weight: 700;
   font-style: normal;
 }
