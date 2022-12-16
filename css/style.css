@@ -11,6 +11,9 @@ body {
   background: none;
   border: 2px white solid;
   border-radius: 3px;
+  font-family: "basic-sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 #logo img {
