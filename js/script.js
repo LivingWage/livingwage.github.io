@@ -1244,6 +1244,57 @@ function calculateValues() {
           payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
         }
         break;
+    case "Salt Spring Island":
+        wageRate = 24.36;
+        communityName.innerHTML=" - "+communityText;
+        switch(healthValue) {
+          case "100":
+            benefitHealth = 2.03
+            break;
+          case "75":
+            benefitHealth = 1.47
+            break;
+          case "50":
+            benefitHealth = 0.98
+            break;
+          case "25":
+            benefitHealth = 0.53
+            break;
+          case "0":
+            benefitHealth = 0.00
+            break;
+        }
+        hbaVector = 0.00068;
+        vacationVector = 0.14;
+        benefitsVector = 0.00059;
+        benefitHBATotal = hbaValue * hbaVector;
+        healthBenefitTotal = benefitHealth + benefitHBATotal;
+        healthBenefitsMax = 2.03;
+        if (healthBenefitTotal > healthBenefitsMax) {
+          healthBenefitTotal = healthBenefitsMax
+        }
+        benefitVacation = vacationValue * vacationVector;
+        benefitOther = otherValue * benefitsVector;
+        totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
+        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
+        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
+        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
+        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
+        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
+        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
+        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
+        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
+        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
+        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
+        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
+        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
+        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
+          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+        } else {
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+        }
+        break;
     }
   }
   document.addEventListener("DOMContentLoaded", function() {
