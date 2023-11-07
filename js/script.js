@@ -72,31 +72,31 @@ function calculateValues() {
 
     switch(communityText) {
       case "Metro Vancouver":
-        wageRate = 24.08;
+        wageRate = 25.68;
         communityName.innerHTML=" - "+communityText;
         switch(healthValue) {
           case "100":
-            benefitHealth = 1.94
+            benefitHealth = 2.33
             break;
           case "75":
-            benefitHealth = 1.39
+            benefitHealth = 1.64
             break;
           case "50":
-            benefitHealth = 0.90
+            benefitHealth = 1.06
             break;
           case "25":
-            benefitHealth = 0.46
+            benefitHealth = 0.53
             break;
           case "0":
             benefitHealth = 0.00
             break;
         }
-        hbaVector = 0.00068;
+        hbaVector = 0.00063;
         vacationVector = 0.14;
-        benefitsVector = 0.00059;
+        benefitsVector = 0.0005814;
         benefitHBATotal = hbaValue * hbaVector;
         healthBenefitTotal = benefitHealth + benefitHBATotal;
-        healthBenefitsMax = 1.94;
+        healthBenefitsMax = 2.33;
         if (healthBenefitTotal > healthBenefitsMax) {
           healthBenefitTotal = healthBenefitsMax
         }
@@ -123,31 +123,31 @@ function calculateValues() {
         }
         break;
       case "Greater Victoria":
-        wageRate = 24.29;
+        wageRate = 25.40;
         communityName.innerHTML=" - "+communityText;
         switch(healthValue) {
           case "100":
-            benefitHealth = 1.96
+            benefitHealth = 2.30
             break;
           case "75":
-            benefitHealth = 1.40
+            benefitHealth = 1.63
             break;
           case "50":
-            benefitHealth = 0.91
+            benefitHealth = 1.07
             break;
           case "25":
-            benefitHealth = 0.46
+            benefitHealth = 0.54
             break;
           case "0":
             benefitHealth = 0.00
             break;
         }
-        hbaVector = 0.00068;
+        hbaVector = 0.00064;
         vacationVector = 0.14;
-        benefitsVector = 0.00059;
+        benefitsVector = 0.0005882;
         benefitHBATotal = hbaValue * hbaVector;
         healthBenefitTotal = benefitHealth + benefitHBATotal;
-        healthBenefitsMax = 1.96;
+        healthBenefitsMax = 2.30;
         if (healthBenefitTotal > healthBenefitsMax) {
           healthBenefitTotal = healthBenefitsMax
         }
@@ -327,31 +327,31 @@ function calculateValues() {
         }
         break;
       case "Fraser Valley":
-        wageRate = 18.98;
+        wageRate = 20.66;
         communityName.innerHTML=" - "+communityText;
         switch(healthValue) {
           case "100":
-            benefitHealth = 1.91
+            benefitHealth = 2.37
             break;
           case "75":
-            benefitHealth = 1.36
+            benefitHealth = 1.69
             break;
           case "50":
-            benefitHealth = 0.90
+            benefitHealth = 1.12
             break;
           case "25":
-            benefitHealth = 0.46
+            benefitHealth = 0.57
             break;
           case "0":
             benefitHealth = 0.00
             break;
         }
-        hbaVector = 0.00068;
-        vacationVector = 0.11;
-        benefitsVector = 0.00059;
+        hbaVector = 0.0006734;
+        vacationVector = 0.12;
+        benefitsVector = 0.0005882;
         benefitHBATotal = hbaValue * hbaVector;
         healthBenefitTotal = benefitHealth + benefitHBATotal;
-        healthBenefitsMax = 1.91;
+        healthBenefitsMax = 2.37;
         if (healthBenefitTotal > healthBenefitsMax) {
           healthBenefitTotal = healthBenefitsMax
         }
