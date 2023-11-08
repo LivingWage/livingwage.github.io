@@ -174,31 +174,31 @@ function calculateValues() {
         }
         break;
       case "Comox Valley":
-        wageRate = 20.26;
+        wageRate = 22.02;
         communityName.innerHTML=" - "+communityText;
         switch(healthValue) {
           case "100":
-            benefitHealth = 1.92
+            benefitHealth = 2.39
             break;
           case "75":
-            benefitHealth = 1.37
+            benefitHealth = 1.70
             break;
           case "50":
-            benefitHealth = 0.90
+            benefitHealth = 1.12
             break;
           case "25":
-            benefitHealth = 0.46
+            benefitHealth = 0.57
             break;
           case "0":
             benefitHealth = 0.00
             break;
         }
-        hbaVector = 0.00068;
+        hbaVector = 0.0006734;
         vacationVector = 0.12;
         benefitsVector = 0.00059;
         benefitHBATotal = hbaValue * hbaVector;
         healthBenefitTotal = benefitHealth + benefitHBATotal;
-        healthBenefitsMax = 1.92;
+        healthBenefitsMax = 2.39;
         if (healthBenefitTotal > healthBenefitsMax) {
           healthBenefitTotal = healthBenefitsMax
         }
@@ -225,31 +225,31 @@ function calculateValues() {
         }
         break;
       case "Kelowna":
-        wageRate = 22.88;
+        wageRate = 24.60;
         communityName.innerHTML=" - "+communityText;
         switch(healthValue) {
           case "100":
-            benefitHealth = 1.95
+            benefitHealth = 2.28
             break;
           case "75":
-            benefitHealth = 1.40
+            benefitHealth = 1.63
             break;
           case "50":
-            benefitHealth = 0.91
+            benefitHealth = 1.05
             break;
           case "25":
-            benefitHealth = 0.47
+            benefitHealth = 0.53
             break;
           case "0":
             benefitHealth = 0.00
             break;
         }
-        hbaVector = 0.00068;
+        hbaVector = 0.00062;
         vacationVector = 0.13;
         benefitsVector = 0.00059;
         benefitHBATotal = hbaValue * hbaVector;
         healthBenefitTotal = benefitHealth + benefitHBATotal;
-        healthBenefitsMax = 1.95;
+        healthBenefitsMax = 2.28;
         if (healthBenefitTotal > healthBenefitsMax) {
           healthBenefitTotal = healthBenefitsMax
         }
@@ -276,31 +276,31 @@ function calculateValues() {
         }
         break;
       case "Nanaimo":
-        wageRate = 20.49;
+        wageRate = 22.87;
         communityName.innerHTML=" - "+communityText;
         switch(healthValue) {
           case "100":
-            benefitHealth = 1.91
+            benefitHealth = 2.38
             break;
           case "75":
-            benefitHealth = 1.36
+            benefitHealth = 1.69
             break;
           case "50":
-            benefitHealth = 0.89
+            benefitHealth = 1.11
             break;
           case "25":
-            benefitHealth = 0.44
+            benefitHealth = 0.56
             break;
           case "0":
             benefitHealth = 0.00
             break;
         }
-        hbaVector = 0.00068;
-        vacationVector = 0.12;
+        hbaVector = 0.00067;
+        vacationVector = 0.13;
         benefitsVector = 0.00059;
         benefitHBATotal = hbaValue * hbaVector;
         healthBenefitTotal = benefitHealth + benefitHBATotal;
-        healthBenefitsMax = 1.91;
+        healthBenefitsMax = 2.38;
         if (healthBenefitTotal > healthBenefitsMax) {
           healthBenefitTotal = healthBenefitsMax
         }
@@ -429,31 +429,31 @@ function calculateValues() {
         }
         break;
       case "Prince George":
-        wageRate = 21.19;
+        wageRate = 22.09;
         communityName.innerHTML=" - "+communityText;
         switch(healthValue) {
           case "100":
-            benefitHealth = 2.09
+            benefitHealth = 2.37
             break;
           case "75":
-            benefitHealth = 1.49
+            benefitHealth = 1.68
             break;
           case "50":
-            benefitHealth = 0.98
+            benefitHealth = 1.11
             break;
           case "25":
-            benefitHealth = 0.49
+            benefitHealth = 0.56
             break;
           case "0":
             benefitHealth = 0.00
             break;
         }
-        hbaVector = 0.00068;
+        hbaVector = 0.00067;
         vacationVector = 0.12;
         benefitsVector = 0.00059;
         benefitHBATotal = hbaValue * hbaVector;
         healthBenefitTotal = benefitHealth + benefitHBATotal;
-        healthBenefitsMax = 2.09;
+        healthBenefitsMax = 2.37;
         if (healthBenefitTotal > healthBenefitsMax) {
           healthBenefitTotal = healthBenefitsMax
         }
@@ -531,31 +531,31 @@ function calculateValues() {
         }
         break;
       case "Kamloops":
-        wageRate = 19.19;
+        wageRate = 20.91;
         communityName.innerHTML=" - "+communityText;
         switch(healthValue) {
           case "100":
-            benefitHealth = 1.86
+            benefitHealth = 2.38
             break;
           case "75":
-            benefitHealth = 1.30
+            benefitHealth = 1.69
             break;
           case "50":
-            benefitHealth = 0.84
+            benefitHealth = 1.12
             break;
           case "25":
-            benefitHealth = 0.60
+            benefitHealth = 0.57
             break;
           case "0":
             benefitHealth = 0.00
             break;
         }
-        hbaVector = 0.00068;
-        vacationVector = 0.11;
+        hbaVector = 0.00067;
+        vacationVector = 0.12;
         benefitsVector = 0.00059;
         benefitHBATotal = hbaValue * hbaVector;
         healthBenefitTotal = benefitHealth + benefitHBATotal;
-        healthBenefitsMax = 1.86;
+        healthBenefitsMax = 2.38;
         if (healthBenefitTotal > healthBenefitsMax) {
           healthBenefitTotal = healthBenefitsMax
         }
@@ -888,31 +888,31 @@ function calculateValues() {
         }
         break;
       case "Cowichan Valley":
-        wageRate = 23.53;
+        wageRate = 25.20;
         communityName.innerHTML=" - "+communityText;
         switch(healthValue) {
           case "100":
-            benefitHealth = 1.94
+            benefitHealth = 2.29
             break;
           case "75":
-            benefitHealth = 1.39
+            benefitHealth = 1.64
             break;
           case "50":
-            benefitHealth = 0.90
+            benefitHealth = 1.07
             break;
           case "25":
-            benefitHealth = 0.45
+            benefitHealth = 0.54
             break;
           case "0":
             benefitHealth = 0.00
             break;
         }
-        hbaVector = 0.00068;
-        vacationVector = 0.13;
+        hbaVector = 0.00067;
+        vacationVector = 0.14;
         benefitsVector = 0.00059;
         benefitHBATotal = hbaValue * hbaVector;
         healthBenefitTotal = benefitHealth + benefitHBATotal;
-        healthBenefitsMax = 1.94;
+        healthBenefitsMax = 2.29;
         if (healthBenefitTotal > healthBenefitsMax) {
           healthBenefitTotal = healthBenefitsMax
         }
@@ -1194,31 +1194,31 @@ function calculateValues() {
         }
         break;
         case "Sunshine Coast":
-        wageRate = 24.30;
+        wageRate = 25.61;
         communityName.innerHTML=" - "+communityText;
         switch(healthValue) {
           case "100":
-            benefitHealth = 1.97
+            benefitHealth = 2.30
             break;
           case "75":
-            benefitHealth = 1.41
+            benefitHealth = 1.62
             break;
           case "50":
-            benefitHealth = 0.92
+            benefitHealth = 1.05
             break;
           case "25":
-            benefitHealth = 0.47
+            benefitHealth = 0.53
             break;
           case "0":
             benefitHealth = 0.00
             break;
         }
-        hbaVector = 0.00068;
+        hbaVector = 0.00067;
         vacationVector = 0.14;
         benefitsVector = 0.00059;
         benefitHBATotal = hbaValue * hbaVector;
         healthBenefitTotal = benefitHealth + benefitHBATotal;
-        healthBenefitsMax = 1.97;
+        healthBenefitsMax = 2.30;
         if (healthBenefitTotal > healthBenefitsMax) {
           healthBenefitTotal = healthBenefitsMax
         }
