@@ -378,31 +378,31 @@ function calculateValues() {
         }
         break;
       case "Nelson":
-        wageRate = 20.83;
+        wageRate = 21.14;
         communityName.innerHTML=" - "+communityText;
         switch(healthValue) {
           case "100":
-            benefitHealth = 1.93
+            benefitHealth = 2.38
             break;
           case "75":
-            benefitHealth = 1.37
+            benefitHealth = 1.69
             break;
           case "50":
-            benefitHealth = 0.90
+            benefitHealth = 1.12
             break;
           case "25":
-            benefitHealth = 0.45
+            benefitHealth = 0.57
             break;
           case "0":
             benefitHealth = 0.00
             break;
         }
-        hbaVector = 0.00068;
+        hbaVector = 0.00067;
         vacationVector = 0.12;
         benefitsVector = 0.00059;
         benefitHBATotal = hbaValue * hbaVector;
         healthBenefitTotal = benefitHealth + benefitHBATotal;
-        healthBenefitsMax = 1.93;
+        healthBenefitsMax = 2.38;
         if (healthBenefitTotal > healthBenefitsMax) {
           healthBenefitTotal = healthBenefitsMax
         }
@@ -684,31 +684,31 @@ function calculateValues() {
         }
         break;
       case "Powell River":
-        wageRate = 23.33;
+        wageRate = 25.06;
         communityName.innerHTML=" - "+communityText;
         switch(healthValue) {
           case "100":
-            benefitHealth = 2.06
+            benefitHealth = 2.29
             break;
           case "75":
-            benefitHealth = 1.45
+            benefitHealth = 1.63
             break;
           case "50":
-            benefitHealth = 0.94
+            benefitHealth = 1.06
             break;
           case "25":
-            benefitHealth = 0.46
+            benefitHealth = 0.53
             break;
           case "0":
             benefitHealth = 0.00
             break;
         }
-        hbaVector = 0.00068;
-        vacationVector = 0.13;
+        hbaVector = 0.00067;
+        vacationVector = 0.14;
         benefitsVector = 0.00059;
         benefitHBATotal = hbaValue * hbaVector;
         healthBenefitTotal = benefitHealth + benefitHBATotal;
-        healthBenefitsMax = 2.06;
+        healthBenefitsMax = 2.29;
         if (healthBenefitTotal > healthBenefitsMax) {
           healthBenefitTotal = healthBenefitsMax
         }
@@ -938,32 +938,32 @@ function calculateValues() {
           payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
         }
         break;
-      case "Fernie":
-        wageRate = 23.58;
+      case "Clayoquot":
+        wageRate = 26.51;
         communityName.innerHTML=" - "+communityText;
         switch(healthValue) {
           case "100":
-            benefitHealth = 2.02
+            benefitHealth = 2.30
             break;
           case "75":
-            benefitHealth = 1.41
+            benefitHealth = 1.64
             break;
           case "50":
-            benefitHealth = 0.89
+            benefitHealth = 1.06
             break;
           case "25":
-            benefitHealth = 0.44
+            benefitHealth = 0.53
             break;
           case "0":
             benefitHealth = 0.00
             break;
         }
-        hbaVector = 0.00068;
-        vacationVector = 0.13;
+        hbaVector = 0.00067;
+        vacationVector = 0.14;
         benefitsVector = 0.00059;
         benefitHBATotal = hbaValue * hbaVector;
         healthBenefitTotal = benefitHealth + benefitHBATotal;
-        healthBenefitsMax = 2.02;
+        healthBenefitsMax = 2.30;
         if (healthBenefitTotal > healthBenefitsMax) {
           healthBenefitTotal = healthBenefitsMax
         }
