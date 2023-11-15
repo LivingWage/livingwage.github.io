@@ -582,31 +582,31 @@ function calculateValues() {
         }
         break;
       case "Revelstoke":
-        wageRate = 23.60;
+        wageRate = 24.60;
         communityName.innerHTML=" - "+communityText;
         switch(healthValue) {
           case "100":
-            benefitHealth = 1.94
+            benefitHealth = 2.36
             break;
           case "75":
-            benefitHealth = 1.39
+            benefitHealth = 1.67
             break;
           case "50":
-            benefitHealth = 0.90
+            benefitHealth = 1.09
             break;
           case "25":
-            benefitHealth = 0.46
+            benefitHealth = 0.53
             break;
           case "0":
             benefitHealth = 0.00
             break;
         }
-        hbaVector = 0.00068;
+        hbaVector = 0.00067;
         vacationVector = 0.13;
         benefitsVector = 0.00059;
         benefitHBATotal = hbaValue * hbaVector;
         healthBenefitTotal = benefitHealth + benefitHBATotal;
-        healthBenefitsMax = 1.94;
+        healthBenefitsMax = 2.36;
         if (healthBenefitTotal > healthBenefitsMax) {
           healthBenefitTotal = healthBenefitsMax
         }
@@ -633,31 +633,31 @@ function calculateValues() {
         }
         break;
       case "Columbia Valley":
-        wageRate = 21.85;
+        wageRate = 22.63;
         communityName.innerHTML=" - "+communityText;
         switch(healthValue) {
           case "100":
-            benefitHealth = 1.93
+            benefitHealth = 2.39
             break;
           case "75":
-            benefitHealth = 1.37
+            benefitHealth = 1.70
             break;
           case "50":
-            benefitHealth = 0.89
+            benefitHealth = 1.13
             break;
           case "25":
-            benefitHealth = 0.45
+            benefitHealth = 0.57
             break;
           case "0":
             benefitHealth = 0.00
             break;
         }
-        hbaVector = 0.00068;
-        vacationVector = 0.12;
+        hbaVector = 0.00067;
+        vacationVector = 0.13;
         benefitsVector = 0.00059;
         benefitHBATotal = hbaValue * hbaVector;
         healthBenefitTotal = benefitHealth + benefitHBATotal;
-        healthBenefitsMax = 1.93;
+        healthBenefitsMax = 2.39;
         if (healthBenefitTotal > healthBenefitsMax) {
           healthBenefitTotal = healthBenefitsMax
         }
@@ -734,32 +734,32 @@ function calculateValues() {
           payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
         }
         break;
-      case "Greater Trail":
-        wageRate = 21.13;
+      case "Trail":
+        wageRate = 21.55;
         communityName.innerHTML=" - "+communityText;
         switch(healthValue) {
           case "100":
-            benefitHealth = 1.94
+            benefitHealth = 2.37
             break;
           case "75":
-            benefitHealth = 1.38
+            benefitHealth = 1.68
             break;
           case "50":
-            benefitHealth = 0.91
+            benefitHealth = 1.10
             break;
           case "25":
-            benefitHealth = 0.53
+            benefitHealth = 0.54
             break;
           case "0":
             benefitHealth = 0.00
             break;
         }
-        hbaVector = 0.00068;
+        hbaVector = 0.00067;
         vacationVector = 0.12;
         benefitsVector = 0.00059;
         benefitHBATotal = hbaValue * hbaVector;
         healthBenefitTotal = benefitHealth + benefitHBATotal;
-        healthBenefitsMax = 1.94;
+        healthBenefitsMax = 2.37;
         if (healthBenefitTotal > healthBenefitsMax) {
           healthBenefitTotal = healthBenefitsMax
         }
@@ -786,31 +786,31 @@ function calculateValues() {
         }
         break;
       case "Dawson Creek":
-        wageRate = 20.53;
+        wageRate = 20.64;
         communityName.innerHTML=" - "+communityText;
         switch(healthValue) {
           case "100":
-            benefitHealth = 2.09
+            benefitHealth = 2.37
             break;
           case "75":
-            benefitHealth = 1.49
+            benefitHealth = 1.68
             break;
           case "50":
-            benefitHealth = 0.98
+            benefitHealth = 1.11
             break;
           case "25":
-            benefitHealth = 0.49
+            benefitHealth = 0.56
             break;
           case "0":
             benefitHealth = 0.00
             break;
         }
-        hbaVector = 0.00068;
+        hbaVector = 0.00067;
         vacationVector = 0.12;
-        benefitsVector = 0.00064;
+        benefitsVector = 0.00059;
         benefitHBATotal = hbaValue * hbaVector;
         healthBenefitTotal = benefitHealth + benefitHBATotal;
-        healthBenefitsMax = 2.09;
+        healthBenefitsMax = 2.37;
         if (healthBenefitTotal > healthBenefitsMax) {
           healthBenefitTotal = healthBenefitsMax
         }
@@ -837,31 +837,31 @@ function calculateValues() {
         }
         break;
       case "Golden":
-        wageRate = 25.56;
+        wageRate = 25.78;
         communityName.innerHTML=" - "+communityText;
         switch(healthValue) {
           case "100":
-            benefitHealth = 1.95
+            benefitHealth = 2.34
             break;
           case "75":
-            benefitHealth = 1.39
+            benefitHealth = 1.65
             break;
           case "50":
-            benefitHealth = 0.90
+            benefitHealth = 1.06
             break;
           case "25":
-            benefitHealth = 0.46
+            benefitHealth = 0.53
             break;
           case "0":
             benefitHealth = 0.00
             break;
         }
-        hbaVector = 0.00068;
-        vacationVector = 0.15;
+        hbaVector = 0.00065;
+        vacationVector = 0.14;
         benefitsVector = 0.00059;
         benefitHBATotal = hbaValue * hbaVector;
         healthBenefitTotal = benefitHealth + benefitHBATotal;
-        healthBenefitsMax = 1.95;
+        healthBenefitsMax = 2.34;
         if (healthBenefitTotal > healthBenefitsMax) {
           healthBenefitTotal = healthBenefitsMax
         }
@@ -1143,31 +1143,31 @@ function calculateValues() {
         }
         break;
       case "Daajing Gids":
-        wageRate = 25.87;
+        wageRate = 26.25;
         communityName.innerHTML=" - "+communityText;
         switch(healthValue) {
           case "100":
-            benefitHealth = 2.03
+            benefitHealth = 2.33
             break;
           case "75":
-            benefitHealth = 1.43
+            benefitHealth = 1.64
             break;
           case "50":
-            benefitHealth = 0.91
+            benefitHealth = 1.07
             break;
           case "25":
-            benefitHealth = 0.46
+            benefitHealth = 0.54
             break;
           case "0":
             benefitHealth = 0.00
             break;
         }
-        hbaVector = 0.00068;
-        vacationVector = 0.15;
-        benefitsVector = 0.000625;
+        hbaVector = 0.00065;
+        vacationVector = 0.14;
+        benefitsVector = 0.00059;
         benefitHBATotal = hbaValue * hbaVector;
         healthBenefitTotal = benefitHealth + benefitHBATotal;
-        healthBenefitsMax = 2.03;
+        healthBenefitsMax = 2.33;
         if (healthBenefitTotal > healthBenefitsMax) {
           healthBenefitTotal = healthBenefitsMax
         }
