@@ -22,8 +22,8 @@ function calculateValues() {
     //Gets the value of the Healthcare percentage dropdown box
     const g = document.getElementById("hbaBenefits");
     let hbaValue = g.value;
-    if (hbaValue > 2700) {
-      hbaValue = 2700;
+    if (hbaValue > 3348) {
+      hbaValue = 3348;
     }
 
     //Gets the value of the Vacation days dropdown box
