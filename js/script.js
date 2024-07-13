@@ -103,23 +103,23 @@ function calculateValues() {
         benefitVacation = vacationValue * vacationVector;
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
-        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
-        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
-        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
-        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
-        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
-        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
-        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
-        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
-        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        benefitRateHealth.innerHTML="$"+(Math.round(100*(benefitHealth))/100).toFixed(2);
+        benefitRateHealth2.innerHTML="$"+(Math.round(100*(healthBenefitTotal))/100).toFixed(2);
+        benefitRateHBA.innerHTML="$"+(Math.round(100*(benefitHBATotal))/100).toFixed(2);
+        maxHealthValue.innerHTML="$"+(Math.round(100*(healthBenefitsMax))/100).toFixed(2);
+        benefitRateVacation.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateVacation2.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateOther.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        benefitRateOther2.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        hourlyBenefitTotal.innerHTML="$"+(Math.round(100*(totalBenefits))/100).toFixed(2);
+        wageBenefitsGap.innerHTML="$"+(Math.round(100*(wageRate-totalBenefits))/100).toFixed(2);
+        fullWage.innerHTML="$"+(Math.round(100*(lowestWage+totalBenefits))/100).toFixed(2);
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
-          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+          payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
         }
         break;
       case "Greater Victoria":
@@ -154,23 +154,23 @@ function calculateValues() {
         benefitVacation = vacationValue * vacationVector;
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
-        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
-        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
-        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
-        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
-        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
-        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
-        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
-        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
-        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        benefitRateHealth.innerHTML="$"+(Math.round(100*(benefitHealth))/100).toFixed(2);
+        benefitRateHealth2.innerHTML="$"+(Math.round(100*(healthBenefitTotal))/100).toFixed(2);
+        benefitRateHBA.innerHTML="$"+(Math.round(100*(benefitHBATotal))/100).toFixed(2);
+        maxHealthValue.innerHTML="$"+(Math.round(100*(healthBenefitsMax))/100).toFixed(2);
+        benefitRateVacation.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateVacation2.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateOther.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        benefitRateOther2.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        hourlyBenefitTotal.innerHTML="$"+(Math.round(100*(totalBenefits))/100).toFixed(2);
+        wageBenefitsGap.innerHTML="$"+(Math.round(100*(wageRate-totalBenefits))/100).toFixed(2);
+        fullWage.innerHTML="$"+(Math.round(100*(lowestWage+totalBenefits))/100).toFixed(2);
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
-          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+          payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
         }
         break;
       case "Comox Valley":
@@ -205,23 +205,23 @@ function calculateValues() {
         benefitVacation = vacationValue * vacationVector;
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
-        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
-        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
-        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
-        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
-        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
-        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
-        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
-        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
-        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        benefitRateHealth.innerHTML="$"+(Math.round(100*(benefitHealth))/100).toFixed(2);
+        benefitRateHealth2.innerHTML="$"+(Math.round(100*(healthBenefitTotal))/100).toFixed(2);
+        benefitRateHBA.innerHTML="$"+(Math.round(100*(benefitHBATotal))/100).toFixed(2);
+        maxHealthValue.innerHTML="$"+(Math.round(100*(healthBenefitsMax))/100).toFixed(2);
+        benefitRateVacation.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateVacation2.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateOther.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        benefitRateOther2.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        hourlyBenefitTotal.innerHTML="$"+(Math.round(100*(totalBenefits))/100).toFixed(2);
+        wageBenefitsGap.innerHTML="$"+(Math.round(100*(wageRate-totalBenefits))/100).toFixed(2);
+        fullWage.innerHTML="$"+(Math.round(100*(lowestWage+totalBenefits))/100).toFixed(2);
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
-          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+          payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
         }
         break;
       case "Kelowna":
@@ -256,23 +256,23 @@ function calculateValues() {
         benefitVacation = vacationValue * vacationVector;
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
-        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
-        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
-        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
-        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
-        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
-        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
-        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
-        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
-        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        benefitRateHealth.innerHTML="$"+(Math.round(100*(benefitHealth))/100).toFixed(2);
+        benefitRateHealth2.innerHTML="$"+(Math.round(100*(healthBenefitTotal))/100).toFixed(2);
+        benefitRateHBA.innerHTML="$"+(Math.round(100*(benefitHBATotal))/100).toFixed(2);
+        maxHealthValue.innerHTML="$"+(Math.round(100*(healthBenefitsMax))/100).toFixed(2);
+        benefitRateVacation.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateVacation2.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateOther.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        benefitRateOther2.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        hourlyBenefitTotal.innerHTML="$"+(Math.round(100*(totalBenefits))/100).toFixed(2);
+        wageBenefitsGap.innerHTML="$"+(Math.round(100*(wageRate-totalBenefits))/100).toFixed(2);
+        fullWage.innerHTML="$"+(Math.round(100*(lowestWage+totalBenefits))/100).toFixed(2);
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
-          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+          payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
         }
         break;
       case "Nanaimo":
@@ -307,23 +307,23 @@ function calculateValues() {
         benefitVacation = vacationValue * vacationVector;
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
-        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
-        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
-        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
-        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
-        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
-        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
-        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
-        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
-        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        benefitRateHealth.innerHTML="$"+(Math.round(100*(benefitHealth))/100).toFixed(2);
+        benefitRateHealth2.innerHTML="$"+(Math.round(100*(healthBenefitTotal))/100).toFixed(2);
+        benefitRateHBA.innerHTML="$"+(Math.round(100*(benefitHBATotal))/100).toFixed(2);
+        maxHealthValue.innerHTML="$"+(Math.round(100*(healthBenefitsMax))/100).toFixed(2);
+        benefitRateVacation.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateVacation2.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateOther.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        benefitRateOther2.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        hourlyBenefitTotal.innerHTML="$"+(Math.round(100*(totalBenefits))/100).toFixed(2);
+        wageBenefitsGap.innerHTML="$"+(Math.round(100*(wageRate-totalBenefits))/100).toFixed(2);
+        fullWage.innerHTML="$"+(Math.round(100*(lowestWage+totalBenefits))/100).toFixed(2);
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
-          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+          payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
         }
         break;
       case "Fraser Valley":
@@ -358,23 +358,23 @@ function calculateValues() {
         benefitVacation = vacationValue * vacationVector;
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
-        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
-        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
-        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
-        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
-        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
-        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
-        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
-        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
-        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        benefitRateHealth.innerHTML="$"+(Math.round(100*(benefitHealth))/100).toFixed(2);
+        benefitRateHealth2.innerHTML="$"+(Math.round(100*(healthBenefitTotal))/100).toFixed(2);
+        benefitRateHBA.innerHTML="$"+(Math.round(100*(benefitHBATotal))/100).toFixed(2);
+        maxHealthValue.innerHTML="$"+(Math.round(100*(healthBenefitsMax))/100).toFixed(2);
+        benefitRateVacation.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateVacation2.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateOther.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        benefitRateOther2.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        hourlyBenefitTotal.innerHTML="$"+(Math.round(100*(totalBenefits))/100).toFixed(2);
+        wageBenefitsGap.innerHTML="$"+(Math.round(100*(wageRate-totalBenefits))/100).toFixed(2);
+        fullWage.innerHTML="$"+(Math.round(100*(lowestWage+totalBenefits))/100).toFixed(2);
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
-          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+          payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
         }
         break;
       case "Nelson":
@@ -409,23 +409,23 @@ function calculateValues() {
         benefitVacation = vacationValue * vacationVector;
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
-        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
-        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
-        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
-        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
-        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
-        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
-        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
-        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
-        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        benefitRateHealth.innerHTML="$"+(Math.round(100*(benefitHealth))/100).toFixed(2);
+        benefitRateHealth2.innerHTML="$"+(Math.round(100*(healthBenefitTotal))/100).toFixed(2);
+        benefitRateHBA.innerHTML="$"+(Math.round(100*(benefitHBATotal))/100).toFixed(2);
+        maxHealthValue.innerHTML="$"+(Math.round(100*(healthBenefitsMax))/100).toFixed(2);
+        benefitRateVacation.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateVacation2.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateOther.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        benefitRateOther2.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        hourlyBenefitTotal.innerHTML="$"+(Math.round(100*(totalBenefits))/100).toFixed(2);
+        wageBenefitsGap.innerHTML="$"+(Math.round(100*(wageRate-totalBenefits))/100).toFixed(2);
+        fullWage.innerHTML="$"+(Math.round(100*(lowestWage+totalBenefits))/100).toFixed(2);
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
-          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+          payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
         }
         break;
       case "Prince George":
@@ -460,23 +460,23 @@ function calculateValues() {
         benefitVacation = vacationValue * vacationVector;
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
-        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
-        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
-        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
-        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
-        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
-        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
-        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
-        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
-        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        benefitRateHealth.innerHTML="$"+(Math.round(100*(benefitHealth))/100).toFixed(2);
+        benefitRateHealth2.innerHTML="$"+(Math.round(100*(healthBenefitTotal))/100).toFixed(2);
+        benefitRateHBA.innerHTML="$"+(Math.round(100*(benefitHBATotal))/100).toFixed(2);
+        maxHealthValue.innerHTML="$"+(Math.round(100*(healthBenefitsMax))/100).toFixed(2);
+        benefitRateVacation.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateVacation2.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateOther.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        benefitRateOther2.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        hourlyBenefitTotal.innerHTML="$"+(Math.round(100*(totalBenefits))/100).toFixed(2);
+        wageBenefitsGap.innerHTML="$"+(Math.round(100*(wageRate-totalBenefits))/100).toFixed(2);
+        fullWage.innerHTML="$"+(Math.round(100*(lowestWage+totalBenefits))/100).toFixed(2);
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
-          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+          payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
         }
         break;
       case "Grand Forks":
@@ -511,23 +511,23 @@ function calculateValues() {
         benefitVacation = vacationValue * vacationVector;
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
-        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
-        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
-        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
-        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
-        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
-        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
-        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
-        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
-        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        benefitRateHealth.innerHTML="$"+(Math.round(100*(benefitHealth))/100).toFixed(2);
+        benefitRateHealth2.innerHTML="$"+(Math.round(100*(healthBenefitTotal))/100).toFixed(2);
+        benefitRateHBA.innerHTML="$"+(Math.round(100*(benefitHBATotal))/100).toFixed(2);
+        maxHealthValue.innerHTML="$"+(Math.round(100*(healthBenefitsMax))/100).toFixed(2);
+        benefitRateVacation.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateVacation2.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateOther.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        benefitRateOther2.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        hourlyBenefitTotal.innerHTML="$"+(Math.round(100*(totalBenefits))/100).toFixed(2);
+        wageBenefitsGap.innerHTML="$"+(Math.round(100*(wageRate-totalBenefits))/100).toFixed(2);
+        fullWage.innerHTML="$"+(Math.round(100*(lowestWage+totalBenefits))/100).toFixed(2);
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
-          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+          payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
         }
         break;
       case "Kamloops":
@@ -562,23 +562,23 @@ function calculateValues() {
         benefitVacation = vacationValue * vacationVector;
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
-        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
-        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
-        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
-        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
-        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
-        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
-        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
-        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
-        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        benefitRateHealth.innerHTML="$"+(Math.round(100*(benefitHealth))/100).toFixed(2);
+        benefitRateHealth2.innerHTML="$"+(Math.round(100*(healthBenefitTotal))/100).toFixed(2);
+        benefitRateHBA.innerHTML="$"+(Math.round(100*(benefitHBATotal))/100).toFixed(2);
+        maxHealthValue.innerHTML="$"+(Math.round(100*(healthBenefitsMax))/100).toFixed(2);
+        benefitRateVacation.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateVacation2.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateOther.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        benefitRateOther2.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        hourlyBenefitTotal.innerHTML="$"+(Math.round(100*(totalBenefits))/100).toFixed(2);
+        wageBenefitsGap.innerHTML="$"+(Math.round(100*(wageRate-totalBenefits))/100).toFixed(2);
+        fullWage.innerHTML="$"+(Math.round(100*(lowestWage+totalBenefits))/100).toFixed(2);
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
-          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+          payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
         }
         break;
       case "Revelstoke":
@@ -613,23 +613,23 @@ function calculateValues() {
         benefitVacation = vacationValue * vacationVector;
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
-        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
-        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
-        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
-        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
-        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
-        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
-        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
-        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
-        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        benefitRateHealth.innerHTML="$"+(Math.round(100*(benefitHealth))/100).toFixed(2);
+        benefitRateHealth2.innerHTML="$"+(Math.round(100*(healthBenefitTotal))/100).toFixed(2);
+        benefitRateHBA.innerHTML="$"+(Math.round(100*(benefitHBATotal))/100).toFixed(2);
+        maxHealthValue.innerHTML="$"+(Math.round(100*(healthBenefitsMax))/100).toFixed(2);
+        benefitRateVacation.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateVacation2.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateOther.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        benefitRateOther2.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        hourlyBenefitTotal.innerHTML="$"+(Math.round(100*(totalBenefits))/100).toFixed(2);
+        wageBenefitsGap.innerHTML="$"+(Math.round(100*(wageRate-totalBenefits))/100).toFixed(2);
+        fullWage.innerHTML="$"+(Math.round(100*(lowestWage+totalBenefits))/100).toFixed(2);
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
-          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+          payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
         }
         break;
       case "Columbia Valley":
@@ -664,23 +664,23 @@ function calculateValues() {
         benefitVacation = vacationValue * vacationVector;
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
-        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
-        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
-        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
-        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
-        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
-        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
-        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
-        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
-        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        benefitRateHealth.innerHTML="$"+(Math.round(100*(benefitHealth))/100).toFixed(2);
+        benefitRateHealth2.innerHTML="$"+(Math.round(100*(healthBenefitTotal))/100).toFixed(2);
+        benefitRateHBA.innerHTML="$"+(Math.round(100*(benefitHBATotal))/100).toFixed(2);
+        maxHealthValue.innerHTML="$"+(Math.round(100*(healthBenefitsMax))/100).toFixed(2);
+        benefitRateVacation.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateVacation2.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateOther.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        benefitRateOther2.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        hourlyBenefitTotal.innerHTML="$"+(Math.round(100*(totalBenefits))/100).toFixed(2);
+        wageBenefitsGap.innerHTML="$"+(Math.round(100*(wageRate-totalBenefits))/100).toFixed(2);
+        fullWage.innerHTML="$"+(Math.round(100*(lowestWage+totalBenefits))/100).toFixed(2);
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
-          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+          payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
         }
         break;
       case "Powell River":
@@ -715,23 +715,23 @@ function calculateValues() {
         benefitVacation = vacationValue * vacationVector;
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
-        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
-        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
-        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
-        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
-        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
-        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
-        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
-        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
-        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        benefitRateHealth.innerHTML="$"+(Math.round(100*(benefitHealth))/100).toFixed(2);
+        benefitRateHealth2.innerHTML="$"+(Math.round(100*(healthBenefitTotal))/100).toFixed(2);
+        benefitRateHBA.innerHTML="$"+(Math.round(100*(benefitHBATotal))/100).toFixed(2);
+        maxHealthValue.innerHTML="$"+(Math.round(100*(healthBenefitsMax))/100).toFixed(2);
+        benefitRateVacation.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateVacation2.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateOther.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        benefitRateOther2.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        hourlyBenefitTotal.innerHTML="$"+(Math.round(100*(totalBenefits))/100).toFixed(2);
+        wageBenefitsGap.innerHTML="$"+(Math.round(100*(wageRate-totalBenefits))/100).toFixed(2);
+        fullWage.innerHTML="$"+(Math.round(100*(lowestWage+totalBenefits))/100).toFixed(2);
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
-          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+          payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
         }
         break;
       case "Trail":
@@ -766,23 +766,23 @@ function calculateValues() {
         benefitVacation = vacationValue * vacationVector;
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
-        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
-        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
-        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
-        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
-        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
-        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
-        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
-        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
-        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        benefitRateHealth.innerHTML="$"+(Math.round(100*(benefitHealth))/100).toFixed(2);
+        benefitRateHealth2.innerHTML="$"+(Math.round(100*(healthBenefitTotal))/100).toFixed(2);
+        benefitRateHBA.innerHTML="$"+(Math.round(100*(benefitHBATotal))/100).toFixed(2);
+        maxHealthValue.innerHTML="$"+(Math.round(100*(healthBenefitsMax))/100).toFixed(2);
+        benefitRateVacation.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateVacation2.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateOther.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        benefitRateOther2.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        hourlyBenefitTotal.innerHTML="$"+(Math.round(100*(totalBenefits))/100).toFixed(2);
+        wageBenefitsGap.innerHTML="$"+(Math.round(100*(wageRate-totalBenefits))/100).toFixed(2);
+        fullWage.innerHTML="$"+(Math.round(100*(lowestWage+totalBenefits))/100).toFixed(2);
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
-          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+          payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
         }
         break;
       case "Dawson Creek":
@@ -817,23 +817,23 @@ function calculateValues() {
         benefitVacation = vacationValue * vacationVector;
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
-        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
-        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
-        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
-        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
-        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
-        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
-        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
-        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
-        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        benefitRateHealth.innerHTML="$"+(Math.round(100*(benefitHealth))/100).toFixed(2);
+        benefitRateHealth2.innerHTML="$"+(Math.round(100*(healthBenefitTotal))/100).toFixed(2);
+        benefitRateHBA.innerHTML="$"+(Math.round(100*(benefitHBATotal))/100).toFixed(2);
+        maxHealthValue.innerHTML="$"+(Math.round(100*(healthBenefitsMax))/100).toFixed(2);
+        benefitRateVacation.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateVacation2.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateOther.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        benefitRateOther2.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        hourlyBenefitTotal.innerHTML="$"+(Math.round(100*(totalBenefits))/100).toFixed(2);
+        wageBenefitsGap.innerHTML="$"+(Math.round(100*(wageRate-totalBenefits))/100).toFixed(2);
+        fullWage.innerHTML="$"+(Math.round(100*(lowestWage+totalBenefits))/100).toFixed(2);
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
-          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+          payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
         }
         break;
       case "Golden":
@@ -868,23 +868,23 @@ function calculateValues() {
         benefitVacation = vacationValue * vacationVector;
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
-        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
-        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
-        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
-        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
-        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
-        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
-        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
-        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
-        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        benefitRateHealth.innerHTML="$"+(Math.round(100*(benefitHealth))/100).toFixed(2);
+        benefitRateHealth2.innerHTML="$"+(Math.round(100*(healthBenefitTotal))/100).toFixed(2);
+        benefitRateHBA.innerHTML="$"+(Math.round(100*(benefitHBATotal))/100).toFixed(2);
+        maxHealthValue.innerHTML="$"+(Math.round(100*(healthBenefitsMax))/100).toFixed(2);
+        benefitRateVacation.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateVacation2.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateOther.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        benefitRateOther2.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        hourlyBenefitTotal.innerHTML="$"+(Math.round(100*(totalBenefits))/100).toFixed(2);
+        wageBenefitsGap.innerHTML="$"+(Math.round(100*(wageRate-totalBenefits))/100).toFixed(2);
+        fullWage.innerHTML="$"+(Math.round(100*(lowestWage+totalBenefits))/100).toFixed(2);
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
-          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+          payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
         }
         break;
       case "Cowichan Valley":
@@ -919,23 +919,23 @@ function calculateValues() {
         benefitVacation = vacationValue * vacationVector;
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
-        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
-        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
-        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
-        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
-        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
-        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
-        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
-        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
-        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        benefitRateHealth.innerHTML="$"+(Math.round(100*(benefitHealth))/100).toFixed(2);
+        benefitRateHealth2.innerHTML="$"+(Math.round(100*(healthBenefitTotal))/100).toFixed(2);
+        benefitRateHBA.innerHTML="$"+(Math.round(100*(benefitHBATotal))/100).toFixed(2);
+        maxHealthValue.innerHTML="$"+(Math.round(100*(healthBenefitsMax))/100).toFixed(2);
+        benefitRateVacation.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateVacation2.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateOther.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        benefitRateOther2.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        hourlyBenefitTotal.innerHTML="$"+(Math.round(100*(totalBenefits))/100).toFixed(2);
+        wageBenefitsGap.innerHTML="$"+(Math.round(100*(wageRate-totalBenefits))/100).toFixed(2);
+        fullWage.innerHTML="$"+(Math.round(100*(lowestWage+totalBenefits))/100).toFixed(2);
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
-          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+          payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
         }
         break;
       case "Clayoquot":
@@ -970,23 +970,23 @@ function calculateValues() {
         benefitVacation = vacationValue * vacationVector;
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
-        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
-        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
-        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
-        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
-        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
-        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
-        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
-        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
-        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        benefitRateHealth.innerHTML="$"+(Math.round(100*(benefitHealth))/100).toFixed(2);
+        benefitRateHealth2.innerHTML="$"+(Math.round(100*(healthBenefitTotal))/100).toFixed(2);
+        benefitRateHBA.innerHTML="$"+(Math.round(100*(benefitHBATotal))/100).toFixed(2);
+        maxHealthValue.innerHTML="$"+(Math.round(100*(healthBenefitsMax))/100).toFixed(2);
+        benefitRateVacation.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateVacation2.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateOther.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        benefitRateOther2.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        hourlyBenefitTotal.innerHTML="$"+(Math.round(100*(totalBenefits))/100).toFixed(2);
+        wageBenefitsGap.innerHTML="$"+(Math.round(100*(wageRate-totalBenefits))/100).toFixed(2);
+        fullWage.innerHTML="$"+(Math.round(100*(lowestWage+totalBenefits))/100).toFixed(2);
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
-          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+          payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
         }
         break;
       case "Prince Rupert":
@@ -1021,23 +1021,23 @@ function calculateValues() {
         benefitVacation = vacationValue * vacationVector;
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
-        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
-        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
-        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
-        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
-        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
-        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
-        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
-        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
-        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        benefitRateHealth.innerHTML="$"+(Math.round(100*(benefitHealth))/100).toFixed(2);
+        benefitRateHealth2.innerHTML="$"+(Math.round(100*(healthBenefitTotal))/100).toFixed(2);
+        benefitRateHBA.innerHTML="$"+(Math.round(100*(benefitHBATotal))/100).toFixed(2);
+        maxHealthValue.innerHTML="$"+(Math.round(100*(healthBenefitsMax))/100).toFixed(2);
+        benefitRateVacation.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateVacation2.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateOther.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        benefitRateOther2.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        hourlyBenefitTotal.innerHTML="$"+(Math.round(100*(totalBenefits))/100).toFixed(2);
+        wageBenefitsGap.innerHTML="$"+(Math.round(100*(wageRate-totalBenefits))/100).toFixed(2);
+        fullWage.innerHTML="$"+(Math.round(100*(lowestWage+totalBenefits))/100).toFixed(2);
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
-          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+          payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
         }
         break;
       case "Cranbrook":
@@ -1072,23 +1072,23 @@ function calculateValues() {
         benefitVacation = vacationValue * vacationVector;
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
-        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
-        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
-        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
-        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
-        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
-        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
-        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
-        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
-        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        benefitRateHealth.innerHTML="$"+(Math.round(100*(benefitHealth))/100).toFixed(2);
+        benefitRateHealth2.innerHTML="$"+(Math.round(100*(healthBenefitTotal))/100).toFixed(2);
+        benefitRateHBA.innerHTML="$"+(Math.round(100*(benefitHBATotal))/100).toFixed(2);
+        maxHealthValue.innerHTML="$"+(Math.round(100*(healthBenefitsMax))/100).toFixed(2);
+        benefitRateVacation.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateVacation2.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateOther.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        benefitRateOther2.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        hourlyBenefitTotal.innerHTML="$"+(Math.round(100*(totalBenefits))/100).toFixed(2);
+        wageBenefitsGap.innerHTML="$"+(Math.round(100*(wageRate-totalBenefits))/100).toFixed(2);
+        fullWage.innerHTML="$"+(Math.round(100*(lowestWage+totalBenefits))/100).toFixed(2);
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
-          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+          payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
         }
         break;
       case "Castlegar":
@@ -1123,23 +1123,23 @@ function calculateValues() {
         benefitVacation = vacationValue * vacationVector;
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
-        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
-        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
-        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
-        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
-        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
-        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
-        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
-        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
-        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        benefitRateHealth.innerHTML="$"+(Math.round(100*(benefitHealth))/100).toFixed(2);
+        benefitRateHealth2.innerHTML="$"+(Math.round(100*(healthBenefitTotal))/100).toFixed(2);
+        benefitRateHBA.innerHTML="$"+(Math.round(100*(benefitHBATotal))/100).toFixed(2);
+        maxHealthValue.innerHTML="$"+(Math.round(100*(healthBenefitsMax))/100).toFixed(2);
+        benefitRateVacation.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateVacation2.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateOther.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        benefitRateOther2.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        hourlyBenefitTotal.innerHTML="$"+(Math.round(100*(totalBenefits))/100).toFixed(2);
+        wageBenefitsGap.innerHTML="$"+(Math.round(100*(wageRate-totalBenefits))/100).toFixed(2);
+        fullWage.innerHTML="$"+(Math.round(100*(lowestWage+totalBenefits))/100).toFixed(2);
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
-          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+          payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
         }
         break;
       case "Daajing Gids":
@@ -1174,23 +1174,23 @@ function calculateValues() {
         benefitVacation = vacationValue * vacationVector;
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
-        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
-        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
-        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
-        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
-        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
-        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
-        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
-        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
-        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        benefitRateHealth.innerHTML="$"+(Math.round(100*(benefitHealth))/100).toFixed(2);
+        benefitRateHealth2.innerHTML="$"+(Math.round(100*(healthBenefitTotal))/100).toFixed(2);
+        benefitRateHBA.innerHTML="$"+(Math.round(100*(benefitHBATotal))/100).toFixed(2);
+        maxHealthValue.innerHTML="$"+(Math.round(100*(healthBenefitsMax))/100).toFixed(2);
+        benefitRateVacation.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateVacation2.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateOther.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        benefitRateOther2.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        hourlyBenefitTotal.innerHTML="$"+(Math.round(100*(totalBenefits))/100).toFixed(2);
+        wageBenefitsGap.innerHTML="$"+(Math.round(100*(wageRate-totalBenefits))/100).toFixed(2);
+        fullWage.innerHTML="$"+(Math.round(100*(lowestWage+totalBenefits))/100).toFixed(2);
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
-          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+          payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
         }
         break;
         case "Sunshine Coast":
@@ -1225,23 +1225,23 @@ function calculateValues() {
         benefitVacation = vacationValue * vacationVector;
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
-        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
-        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
-        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
-        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
-        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
-        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
-        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
-        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
-        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        benefitRateHealth.innerHTML="$"+(Math.round(100*(benefitHealth))/100).toFixed(2);
+        benefitRateHealth2.innerHTML="$"+(Math.round(100*(healthBenefitTotal))/100).toFixed(2);
+        benefitRateHBA.innerHTML="$"+(Math.round(100*(benefitHBATotal))/100).toFixed(2);
+        maxHealthValue.innerHTML="$"+(Math.round(100*(healthBenefitsMax))/100).toFixed(2);
+        benefitRateVacation.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateVacation2.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateOther.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        benefitRateOther2.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        hourlyBenefitTotal.innerHTML="$"+(Math.round(100*(totalBenefits))/100).toFixed(2);
+        wageBenefitsGap.innerHTML="$"+(Math.round(100*(wageRate-totalBenefits))/100).toFixed(2);
+        fullWage.innerHTML="$"+(Math.round(100*(lowestWage+totalBenefits))/100).toFixed(2);
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
-          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+          payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
         }
         break;
     case "Salt Spring Island":
@@ -1276,23 +1276,23 @@ function calculateValues() {
         benefitVacation = vacationValue * vacationVector;
         benefitOther = otherValue * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
-        livingWageRate.innerHTML="$"+Math.round(100*(wageRate))/100;
-        livingWageRate2.innerHTML="$"+Math.round(100*(wageRate))/100;
-        benefitRateHealth.innerHTML="$"+Math.round(100*(benefitHealth))/100;
-        benefitRateHealth2.innerHTML="$"+Math.round(100*(healthBenefitTotal))/100;
-        benefitRateHBA.innerHTML="$"+Math.round(100*(benefitHBATotal))/100;
-        maxHealthValue.innerHTML="$"+Math.round(100*(healthBenefitsMax))/100
-        benefitRateVacation.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateVacation2.innerHTML="$"+Math.round(100*(benefitVacation))/100;
-        benefitRateOther.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        benefitRateOther2.innerHTML="$"+Math.round(100*(benefitOther))/100;
-        hourlyBenefitTotal.innerHTML="$"+Math.round(100*(totalBenefits))/100;
-        wageBenefitsGap.innerHTML="$"+Math.round(100*(wageRate-totalBenefits))/100;
-        fullWage.innerHTML="$"+Math.round(100*(lowestWage+totalBenefits))/100;
+        livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
+        benefitRateHealth.innerHTML="$"+(Math.round(100*(benefitHealth))/100).toFixed(2);
+        benefitRateHealth2.innerHTML="$"+(Math.round(100*(healthBenefitTotal))/100).toFixed(2);
+        benefitRateHBA.innerHTML="$"+(Math.round(100*(benefitHBATotal))/100).toFixed(2);
+        maxHealthValue.innerHTML="$"+(Math.round(100*(healthBenefitsMax))/100).toFixed(2);
+        benefitRateVacation.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateVacation2.innerHTML="$"+(Math.round(100*(benefitVacation))/100).toFixed(2);
+        benefitRateOther.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        benefitRateOther2.innerHTML="$"+(Math.round(100*(benefitOther))/100).toFixed(2);
+        hourlyBenefitTotal.innerHTML="$"+(Math.round(100*(totalBenefits))/100).toFixed(2);
+        wageBenefitsGap.innerHTML="$"+(Math.round(100*(wageRate-totalBenefits))/100).toFixed(2);
+        fullWage.innerHTML="$"+(Math.round(100*(lowestWage+totalBenefits))/100).toFixed(2);
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
-          payRise.innerHTML="$"+Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100;
+          payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + Math.round(100*((lowestWage+totalBenefits)-wageRate))/100 + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
         }
         break;
     }
