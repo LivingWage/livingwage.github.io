@@ -130,7 +130,7 @@ function calculateValues() {
         if (Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100 > 0) {
           payRise.innerHTML="$"+(Math.round(100*(wageRate-(lowestWage+totalBenefits)))/100).toFixed(2);
         } else {
-          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100)..toFixed(2) + " per hour.";
+          payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100).toFixed(2) + " per hour.";
         }
         break;
   }
