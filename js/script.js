@@ -1,6 +1,5 @@
-const copyButton = document.getElementById("copyButton");
-
 function copyText() {
+    let copyButton = document.getElementById("copyButton");
     var range = document.createRange();
     range.selectNode(document.getElementById("payRiseBox"));
     window.getSelection().removeAllRanges(); // clear current selection
@@ -136,6 +135,7 @@ function calculateValues() {
         } else {
           payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100).toFixed(2) + " per hour.";
         }
+    let copyButton = document.getElementById("copyButton");
     copyButton.innerHTML = "Click here to copy this information";
     copyButton.style.opacity = 1;
   }
