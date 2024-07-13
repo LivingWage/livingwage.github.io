@@ -1,4 +1,4 @@
-const copyButton = document.getElementById("community");
+const copyButton = document.getElementById("copyButton");
 
 function copyText() {
     var range = document.createRange();
