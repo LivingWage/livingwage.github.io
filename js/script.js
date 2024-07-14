@@ -136,7 +136,7 @@ function calculateValues() {
           payRise.innerHTML="No pay rise required to meet the Living Wage! Your lowest paid employee exceeds the local Living Wage by $" + (Math.round(100*((lowestWage+totalBenefits)-wageRate))/100).toFixed(2) + " per hour.";
         }
     let copyButton = document.getElementById("copyButton");
-    copyButton.innerHTML = "Click here to copy this information";
+    copyButton.innerHTML = "Copy information";
     copyButton.style.opacity = 1;
   }
   document.addEventListener("DOMContentLoaded", function() {
