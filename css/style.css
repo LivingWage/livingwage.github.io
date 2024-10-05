@@ -1,5 +1,5 @@
 body {
-  background: #ffffff, url(https://livingwage.github.io/img/bg.svg);
+  background-image: url(https://livingwage.github.io/img/bg.svg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: bottom right;
@@ -155,7 +155,6 @@ input[type=number] {
 }
 
 .selector {
-  padding: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
