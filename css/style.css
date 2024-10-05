@@ -13,7 +13,7 @@ body {
   font-family: "inter", sans-serif;
   width: 100%;
   text-align: center;
-  color: white;
+  color: #ffffff;
   font-weight: 700;
   font-style: normal;
 }
@@ -54,7 +54,7 @@ p a {
 }
 
 .sectionHeading {
-  color: white;
+  color: #102548;
 }
 
 #heading {
@@ -164,8 +164,8 @@ input[type=number] {
 }
 
 .currencyinput {
-  background-color: white;
-  color: black;
+  background-color: #ffffff;
+  color: #102548;
   border-radius: 3px;
   padding: 8px;
   font-size: 14px;
