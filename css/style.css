@@ -1,9 +1,8 @@
 body {
-  background:linear-gradient(0deg, rgba(1, 160, 170, 0.7), rgba(1, 160, 170, 1)), url(https://livingwage.github.io/img/bg.jpg);
+  background: #ffffff, url(https://livingwage.github.io/img/bg.svg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
+  background-position: bottom right;
 }
 
 #copyButton {
