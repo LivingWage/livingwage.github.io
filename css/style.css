@@ -3,7 +3,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: bottom right;
-  background-size: 25%;
+  background-size: 15%;
 }
 
 #copyButton {
@@ -164,6 +164,7 @@ input[type=number] {
   display: flex;
   flex-wrap: wrap;
   border-radius: 5px;
+  padding: 20px;
 }
 
 .currencyinput {
