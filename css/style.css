@@ -65,9 +65,8 @@ p a {
 
 .section {
   margin: 20px;
-  padding: 20px;
+  padding: 10px;
   width: 100%;
-  border: 3px solid white;
 }
 
 .section h2 {
