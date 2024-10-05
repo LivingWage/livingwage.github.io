@@ -8,8 +8,7 @@ body {
 
 #copyButton {
   padding: 10px;
-  background: none;
-  border: 2px white solid;
+  background: #009d96;
   border-radius: 3px;
   font-family: "inter", sans-serif;
   width: 100%;
