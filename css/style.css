@@ -83,12 +83,12 @@ p a {
 }
 
 #footer {
-  font-size: 10px;
+  font-size: 9px;
   position: fixed;
   background: #102548;
   width: 100%;
   text-align: center;
-  padding: 8px;
+  padding: 10px;
   bottom: 0px;
   left: 0px;
   margin: 0;
