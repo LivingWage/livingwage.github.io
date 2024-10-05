@@ -156,7 +156,7 @@ input[type=number] {
 }
 
 #communityName {
-  colour: #ff530e;
+  colour: #ff530e !important;
 }
 
 .selector {
