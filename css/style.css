@@ -63,7 +63,7 @@ p a {
 }
 
 #heading {
-  font-size: 60px;
+  font-size: 3em;
   line-height: 0.8;
   color: #102548;
 }
@@ -152,6 +152,10 @@ input[type=number] {
   padding: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+#communityName {
+  colour: #ff530e;
 }
 
 .selector {
