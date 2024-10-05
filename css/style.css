@@ -8,7 +8,8 @@ body {
 
 #copyButton {
   padding: 10px;
-  background: #009d96;
+  background: #ff530e;
+  border: none;
   border-radius: 3px;
   font-family: "inter", sans-serif;
   width: 100%;
@@ -144,10 +145,10 @@ input[type=number] {
 }
 
 #payRiseBox {
-  background: #f04e23;
+  background: #ff530e;
   display: block;
   border-radius: 5px;
-  color: #102548 !important;
+  color: #ffffff;
   padding: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
