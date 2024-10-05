@@ -84,7 +84,7 @@ function calculateValues() {
     const fullWage = document.querySelector("#fullWage");
     const payRise = document.querySelector("#payRise");
     
-    communityName.innerHTML=" - "+communityText;
+    communityName.innerHTML=communityText;
     wageRate=wageRates[communityValue];
     
     switch(healthValue) {
