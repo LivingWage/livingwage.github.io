@@ -98,6 +98,7 @@ h1, h2, h3 {
   font-family: "inter", sans-serif;
   font-weight: 900;
   font-style: normal;
+  line-height: 1;
 }
 
 p {
