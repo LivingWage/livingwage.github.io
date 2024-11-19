@@ -25,8 +25,8 @@ function calculateValues() {
     //Gets the value of the Healthcare percentage dropdown box
     const g = document.getElementById("hbaBenefits");
     let hbaValue = g.value;
-    if (hbaValue > 3348) {
-      hbaValue = 3348;
+    if (hbaValue > 2272) {
+      hbaValue = 2272;
     }
 
     //Gets the value of the Vacation days dropdown box
@@ -57,15 +57,17 @@ function calculateValues() {
     let lowestWage = lowestWageValue;
 
     //Creates Arrays to store regional variables.
-    const wageRates = [25.68,25.40,26.51,22.02,25.20,22.63,26.25,20.64,20.66,25.78,20.91,24.60,22.87,21.14,22.09,25.06,24.60,25.61,21.55]
-    const healthBenefits100 = [2.33,2.30,2.30,2.39,2.29,2.39,2.33,2.37,2.37,2.34,2.38,2.28,2.38,2.38,2.37,2.29,2.36,2.30,2.37]
-    const healthBenefits75 = [1.64,1.63,1.64,1.70,1.64,1.70,1.64,1.68,1.69,1.65,1.69,1.63,1.69,1.69,1.68,1.63,1.67,1.62,1.68]
-    const healthBenefits50 = [1.06,1.07,1.06,1.12,1.07,1.13,1.07,1.11,1.12,1.06,1.12,1.05,1.11,1.12,1.11,1.06,1.09,1.05,1.10]
-    const healthBenefits25 = [0.53,0.54,0.53,0.57,0.54,0.57,0.54,0.56,0.57,0.53,0.57,0.53,0.56,0.57,0.56,0.53,0.53,0.53,0.54]
-    const healthBenefits0 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-    const hbaVectors = [0.00063,0.00064,0.00067,0.0006734,0.00067,0.00067,0.00065,0.00067,0.0006734,0.00067,0.00062,0.00067,0.00067,0.00067,0.00067,0.00067,0.00067,0.00067]
-    const vacationVectors = [0.14,0.14,0.14,0.12,0.14,0.13,0.14,0.12,0.12,0.12,0.13,0.13,0.12,0.12,0.14,0.13,0.14,0.12]
-    const benefitsVectors = [0.0005814,0.0005882,0.00059,0.00059,0.00059,0.00059,0.00059,0.00059,0.0005882,0.00059,0.00059,0.00059,0.00059,0.00059,0.00059,0.00059,0.00059,0.00059]
+    const wageRates = [27.05,26.78,24.36,21.55,25.62,26.42]
+    const healthBenefits100 = [1.97,1.96,1.97,2.00,1.97,1.97]
+    const healthBenefits80 = [1.51,1.50,1.52,1.55,1.52,1.51]
+    const healthBenefits75 = [1.39,1.39,1.40,1.43,1.40,1.39]
+    const healthBenefits70 = [1.28,1.28,1.29,1.32,1.29,1.28]
+    const healthBenefits50 = [0.88,0.88,0.88,0.94,0.89,0.88]
+    const healthBenefits25 = [0.44,0.44,0.44,0.47,0.45,0.44]
+    const healthBenefits0 = [0,0,0,0,0,0]
+    const hbaVectors = [0.00064,0.00064,0.000635,0.00068,0.00064,0.00064]
+    const vacationVectors = [0.15,0.14,0.13,0.12,0.14,0.14]
+    const benefitsVectors = [0.00058,0.00058,0.000579,0.000587,0.00076,0.00058]
 
     //Creates variables for page elements which need to be filled with visible text.
     const communityName = document.querySelector("#communityName");
@@ -91,7 +93,13 @@ function calculateValues() {
       case "100":
         benefitHealth = healthBenefits100[communityValue];
         break;
+      case "80":
+        benefitHealth = healthBenefits80[communityValue];
+        break;
       case "75":
+        benefitHealth = healthBenefits75[communityValue];
+        break;
+      case "70":
         benefitHealth = healthBenefits75[communityValue];
         break;
       case "50":
