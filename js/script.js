@@ -34,13 +34,33 @@ function calculateValues() {
     let vacationValue = h.options[h.selectedIndex].value;
     let vacationText = h.options[h.selectedIndex].text;
 
-    //Gets the value of the Other Benefits input box
-    const i = document.getElementById("otherBenefits");
-    let otherValue = i.value;
-
     //Gets the value of the Lowest Paid Staff Member input box
-    const j = document.getElementById("lowestWage");
-    let lowestWageValue = parseFloat(j.value);
+    const i = document.getElementById("lowestWage");
+    let lowestWageValue = parseFloat(i.value);
+
+    //Gets the value of the Education Benefits input box
+    const j = document.getElementById("educationBenefits");
+    let educationValue = j.value;
+
+    //Gets the value of the Savings Benefits input box
+    const k = document.getElementById("savingsBenefits");
+    let savingsValue = k.value;
+
+    //Gets the value of the Phone Benefits input box
+    const l = document.getElementById("phoneBenefits");
+    let phoneValue = l.value;
+
+    //Gets the value of the Transit Benefits input box
+    const m = document.getElementById("transitBenefits");
+    let transitValue = m.value;
+
+    //Gets the value of the PSA Benefits input box
+    const n = document.getElementById("psaBenefits");
+    let psaValue = n.value;
+
+    //Gets the value of the Cash Benefits input box
+    const o = document.getElementById("cashBenefits");
+    let cashValue = o.value;
 
     //Creates variables for LW rate, benefits value, existing lowest wage, gap to reach LW, and required pay rise.    
     let wageRate = 0.00;
@@ -52,7 +72,7 @@ function calculateValues() {
     let benefitsVector = 0.00;
     let benefitHBATotal = hbaValue * hbaVector;
     let healthBenefitTotal = benefitHealth + benefitHBATotal;
-    let benefitOther = otherValue * benefitsVector;
+    let benefitOther = (educationValue+savingsValue+phoneValue+transitValue+psaValue+cashValue) * benefitsVector;
     let totalBenefits = benefitHealth+benefitVacation+benefitOther;
     let lowestWage = lowestWageValue;
 
