@@ -116,9 +116,13 @@ function calculateValues() {
         hbaVector = hbaVectors[communityValue];
         vacationVector = vacationVectors[communityValue];
         benefitsVector = benefitsVectors[communityValue];
-        benefitHBATotal = hbaValue * hbaVector;
+        if (hbaValue * hbaVector <= healthBenefits100[communityValue]) {
+            benefitHBATotal = hbaValue * hbaVector;    
+        } else {
+            benefitHBATotal = healthBenefits100[communityValue];
+        }
         healthBenefitTotal = benefitHealth + benefitHBATotal;
-        healthBenefitsMax = healthBenefits100[communityValue];;
+        healthBenefitsMax = healthBenefits100[communityValue];
         if (healthBenefitTotal > healthBenefitsMax) {
           healthBenefitTotal = healthBenefitsMax
         }
