@@ -100,7 +100,7 @@ function calculateValues() {
         benefitHealth = healthBenefits75[communityValue];
         break;
       case "70":
-        benefitHealth = healthBenefits75[communityValue];
+        benefitHealth = healthBenefits70[communityValue];
         break;
       case "50":
         benefitHealth = healthBenefits50[communityValue];
