@@ -119,8 +119,18 @@
   <div class="section">
     <h2>Other Benefits</h2>
     <div class="selector" id="otherSelector">
-<p>Value of any other taxable benefits (for example a transit pass, education, child care, cell phone that can be used in spare time):<br />
-   <span class="currencyinput">$<input type="number" name="otherBenefits" id="otherBenefits" onChange="calculateValues()" value="0"/></span></p>
+<p>Education/Training/Personal Benefits (up to a maximum of $1300 per year):<br />
+   <span class="currencyinput">$<input type="number" name="educationBenefits" id="educationBenefits" onChange="calculateValues()" value="0" max="1300"/></span></p>
+<p>Savings (up to $500 a year). Savings contributions can be used to lower the living wage, so long as they are employer-only contributions and available for all staff:<br />
+   <span class="currencyinput">$<input type="number" name="savingsBenefits" id="savingsBenefits" onChange="calculateValues()" value="0" max="500"/></span></p>
+<p>Telephone or internet:<br />
+   <span class="currencyinput">$<input type="number" name="phoneBenefits" id="phoneBenefits" onChange="calculateValues()" value="0"/></span></p>
+<p>Transit pass (up to $900 a year):<br />
+   <span class="currencyinput">$<input type="number" name="transitBenefits" id="transitBenefits" onChange="calculateValues()" value="0" max="900"/></span></p>
+<p>Personal Spending Account (up to $500 a year):<br />
+   <span class="currencyinput">$<input type="number" name="psaBenefits" id="psaBenefits" onChange="calculateValues()" value="0" max="500"/></span></p>
+<p>Cash Allowance:<br />
+   <span class="currencyinput">$<input type="number" name="cashBenefits" id="cashBenefits" onChange="calculateValues()" value="0"/></span></p>
       <h3>Calculated hourly benefit amount - other taxable benefits: <span id="benefitRateOther"></span></h3>
     </div>
 </div>
