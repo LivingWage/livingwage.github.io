@@ -144,7 +144,7 @@ function calculateValues() {
           healthBenefitTotal = healthBenefitsMax
         }
         benefitVacation = vacationValue * vacationVector;
-        benefitOther = (educationValue+savingsValue+phoneValue+transitValue+psaValue+cashValue) * benefitsVector;
+        benefitOther = parseFloat(educationValue+savingsValue+phoneValue+transitValue+psaValue+cashValue) * benefitsVector;
         totalBenefits = healthBenefitTotal+benefitVacation+benefitOther;
         livingWageRate.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
         livingWageRate2.innerHTML="$"+(Math.round(100*(wageRate))/100).toFixed(2);
