@@ -25,9 +25,6 @@ function calculateValues() {
     //Gets the value of the Healthcare percentage dropdown box
     const g = document.getElementById("hbaBenefits");
     let hbaValue = g.value;
-    if (hbaValue > 5000) {
-      hbaValue = 5000;
-    }
 
     //Gets the value of the Vacation days dropdown box
     const h = document.getElementById("vacationBenefits");
@@ -40,27 +37,27 @@ function calculateValues() {
 
     //Gets the value of the Education Benefits input box
     const j = document.getElementById("educationBenefits");
-    let educationValue = j.value;
+    let educationValue = parseFloat(j.value);
 
     //Gets the value of the Savings Benefits input box
     const k = document.getElementById("savingsBenefits");
-    let savingsValue = k.value;
+    let savingsValue = parseFloat(k.value);
 
     //Gets the value of the Phone Benefits input box
     const l = document.getElementById("phoneBenefits");
-    let phoneValue = l.value;
+    let phoneValue = parseFloat(l.value);
 
     //Gets the value of the Transit Benefits input box
     const m = document.getElementById("transitBenefits");
-    let transitValue = m.value;
+    let transitValue = parseFloat(m.value);
 
     //Gets the value of the PSA Benefits input box
     const n = document.getElementById("psaBenefits");
-    let psaValue = n.value;
+    let psaValue = parseFloat(n.value);
 
     //Gets the value of the Cash Benefits input box
     const o = document.getElementById("cashBenefits");
-    let cashValue = o.value;
+    let cashValue = parseFloat(o.value);
 
     //Creates variables for LW rate, benefits value, existing lowest wage, gap to reach LW, and required pay rise.    
     let wageRate = 0.00;
