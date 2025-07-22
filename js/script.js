@@ -87,21 +87,21 @@ function calculateValues() {
     const benefitsVectors = [0.00058,0.00058,0.00058,0.00058,0.0005814,0.00058,0.000586,0.000587,0.00058,0.00058,0.00058,0.00058,0.00058,0.00058,0.00058,0.00058,0.00058,0.00058,0.00058,0.00058,0.00058,0.00058,0.00058,0.00058,0.00058]
 
     //Creates variables for page elements which need to be filled with visible text.
-    const communityName = document.querySelector("#communityName").value;
-    const livingWageRate = document.querySelector("#livingWageRate").value;
-    const livingWageRate2 = document.querySelector("#livingWageRate2").value;
-    const benefitRateHealth = document.querySelector("#benefitRateHealth").value;
-    const benefitRateHealth2 = document.querySelector("#benefitRateHealth2").value;
-    const benefitRateHBA = document.querySelector("#benefitRateHBA").value;
-    const maxHealthValue = document.querySelector("#maxHealthValue").value;
-    const benefitRateVacation = document.querySelector("#benefitRateVacation").value;
-    const benefitRateVacation2 = document.querySelector("#benefitRateVacation2").value;
-    const benefitRateOther = document.querySelector("#benefitRateOther").value;
-    const benefitRateOther2 = document.querySelector("#benefitRateOther2").value;
-    const hourlyBenefitTotal = document.querySelector("#hourlyBenefitTotal").value;
-    const wageBenefitsGap = document.querySelector("#wageBenefitsGap").value;
-    const fullWage = document.querySelector("#fullWage").value;
-    const payRise = document.querySelector("#payRise").value;
+    const communityName = document.querySelector("#communityName")
+    const livingWageRate = document.querySelector("#livingWageRate")
+    const livingWageRate2 = document.querySelector("#livingWageRate2")
+    const benefitRateHealth = document.querySelector("#benefitRateHealth")
+    const benefitRateHealth2 = document.querySelector("#benefitRateHealth2")
+    const benefitRateHBA = document.querySelector("#benefitRateHBA")
+    const maxHealthValue = document.querySelector("#maxHealthValue")
+    const benefitRateVacation = document.querySelector("#benefitRateVacation")
+    const benefitRateVacation2 = document.querySelector("#benefitRateVacation2")
+    const benefitRateOther = document.querySelector("#benefitRateOther")
+    const benefitRateOther2 = document.querySelector("#benefitRateOther2")
+    const hourlyBenefitTotal = document.querySelector("#hourlyBenefitTotal")
+    const wageBenefitsGap = document.querySelector("#wageBenefitsGap")
+    const fullWage = document.querySelector("#fullWage")
+    const payRise = document.querySelector("#payRise")
     
     communityName.innerHTML=communityText;
     wageRate=wageRates[communityValue];
