@@ -18,6 +18,8 @@ function enforceMinMax(el) {
     if (parseInt(el.value) > parseInt(el.max)) {
       el.value = el.max;
     }
+  } else {
+      el.value = 0;
   }
 }
 
