@@ -10,6 +10,17 @@ function copyText() {
     copyButton.style.opacity = 0.66;
 }
 
+function enforceMinMax(el) {
+  if (el.value != "") {
+    if (parseInt(el.value) < parseInt(el.min)) {
+      el.value = el.min;
+    }
+    if (parseInt(el.value) > parseInt(el.max)) {
+      el.value = el.max;
+    }
+  }
+}
+
 function calculateValues() {
 
     //Gets the value of the Community dropdown box
