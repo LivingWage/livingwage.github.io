@@ -86,7 +86,7 @@
 <div class="section">
 <h2>Existing Wages</h2>
 <div class="selector" id="wageSelector">
-<p>Enter the hourly wage of your lowest paid member of staff: <br/><span class="currencyinput">$<input type="number" name="lowestWage" id="lowestWage" onChange="calculateValues()" min=17.40 step="any" value="17.40" onkeyup="enforceMinMax(this)"/><span></p>
+<p>Enter the hourly wage of your lowest paid member of staff: <br/><span class="currencyinput">$<input type="number" name="lowestWage" id="lowestWage" onChange="calculateValues()" min=17.40 step="any" value="17.40" onfocusout="enforceMinMax(this)"/><span></p>
 </div>
 </div>
 
@@ -108,7 +108,7 @@
 
   <div class="selector" id="hbaSelector">
 <p>Enter the value of your annual Health Benefits Account:<br />
-  <span class="currencyinput">$<input type="number" name="hbaBenefits" id="hbaBenefits" onChange="calculateValues()" value="0" min="0" onkeyup="enforceMinMax(this)"/></span></p>
+  <span class="currencyinput">$<input type="number" name="hbaBenefits" id="hbaBenefits" onChange="calculateValues()" value="0" min="0" onfocusout="enforceMinMax(this)"/></span></p>
      <h3>Calculated hourly benefit amount - Health Benefits Account: <span id="benefitRateHBA"></span></h3>
    </div>
    <p id="healthDisclaimer">Please Note: The contribution that health benefits can make to this calculation has been capped at the value of 100% employer health coverage, in this case <span id="maxHealthValue"></span> per hour. If you have entered health benefits as both a percentage and a Health Benefits Account, the above figures may not match the final calculation shown here.</p>
@@ -139,17 +139,17 @@
     <h2>Other Benefits</h2>
     <div class="selector" id="otherSelector">
 <p>Education/Training Benefits (up to $1,300 a year):<br />
-   <span class="currencyinput">$<input type="number" name="educationBenefits" id="educationBenefits" onChange="calculateValues()" value="0" max="1300" min="0" onkeyup="enforceMinMax(this)"/></span></p>
+   <span class="currencyinput">$<input type="number" name="educationBenefits" id="educationBenefits" onChange="calculateValues()" value="0" max="1300" min="0" onfocusout="enforceMinMax(this)"/></span></p>
 <p>Savings (up to $500 a year). Savings contributions can be used to lower the living wage, so long as they are employer-only contributions and available for all staff:<br />
-   <span class="currencyinput">$<input type="number" name="savingsBenefits" id="savingsBenefits" onChange="calculateValues()" value="0" max="500" min="0" onkeyup="enforceMinMax(this)"/></span></p>
+   <span class="currencyinput">$<input type="number" name="savingsBenefits" id="savingsBenefits" onChange="calculateValues()" value="0" max="500" min="0" onfocusout="enforceMinMax(this)"/></span></p>
 <p>Telephone or internet (up to $1,200 a year):<br />
-   <span class="currencyinput">$<input type="number" name="phoneBenefits" id="phoneBenefits" onChange="calculateValues()" value="0" max="1200" min="0" onkeyup="enforceMinMax(this)"/></span></p>
+   <span class="currencyinput">$<input type="number" name="phoneBenefits" id="phoneBenefits" onChange="calculateValues()" value="0" max="1200" min="0" onfocusout="enforceMinMax(this)"/></span></p>
 <p>Transit pass (up to $900 a year):<br />
-   <span class="currencyinput">$<input type="number" name="transitBenefits" id="transitBenefits" onChange="calculateValues()" value="0" max="900" min="0" onkeyup="enforceMinMax(this)"/></span></p>
+   <span class="currencyinput">$<input type="number" name="transitBenefits" id="transitBenefits" onChange="calculateValues()" value="0" max="900" min="0" onfocusout="enforceMinMax(this)"/></span></p>
 <p>Personal Spending Account (up to $500 a year):<br />
-   <span class="currencyinput">$<input type="number" name="psaBenefits" id="psaBenefits" onChange="calculateValues()" value="0" max="500" min="0" onkeyup="enforceMinMax(this)"/></span></p>
+   <span class="currencyinput">$<input type="number" name="psaBenefits" id="psaBenefits" onChange="calculateValues()" value="0" max="500" min="0" onfocusout="enforceMinMax(this)"/></span></p>
 <p>Cash Allowance (up to $5,000 a year):<br />
-   <span class="currencyinput">$<input type="number" name="cashBenefits" id="cashBenefits" onChange="calculateValues()" value="0" max="5000" min="0" onkeyup="enforceMinMax(this)"/></span></p>
+   <span class="currencyinput">$<input type="number" name="cashBenefits" id="cashBenefits" onChange="calculateValues()" value="0" max="5000" min="0" onfocusout="enforceMinMax(this)"/></span></p>
       <h3>Calculated hourly benefit amount - other taxable benefits: <span id="benefitRateOther"></span></h3>
     </div>
 </div>
