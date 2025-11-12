@@ -75,6 +75,7 @@ p a {
 }
 
 #footer {
+  color: white;
   font-size: 9px;
   position: fixed;
   background: #102548;
@@ -170,4 +171,5 @@ input[type=number] {
   padding: 8px;
   font-size: 14px;
 }
+
 
