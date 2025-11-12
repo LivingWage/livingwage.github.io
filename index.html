@@ -35,145 +35,18 @@
   <!-- Favicon -->
   <link rel="icon" href="img/Favicon.png" type="image/x-icon">
 
-<script src="js/script.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-
 </head>
 
 <body>
 <a id="logo" href="https://www.livingwagebc.ca" target="_blank"><img src="img/LogoLong.svg" width="300px"/></a>
 <main>
 
-  <h1 id="heading">Living Wage Employer Benefit Calculator<br /><span id="communityName"></span></h1>
-  <p id="explainer">A living wage can be made up of base wage and benefits. Enter information about the benefits you offer and we can calculate the value of your benefits and how much you need to pay staff to reach the living wage.</p>
+  <h1 id="heading">The Living Wage Employer Benefit Calculator Has Moved!</h1>
+  <p id="explainer"><a href="https://livingwagebc.ca/calculator">Click here to access the Benefit Calculator on the Living Wage BC website.</a></p>
 
-<div class="selector" id="communitySelector">
-<h3>Please select your community:<br/>
-<select name="community" id="community" value="Metro Vancouver" onChange="calculateValues()">
-  <option value="0">Metro Vancouver</option>
-  <option value="1">Greater Victoria</option>
-  <option value="2">Clayoquot Sound</option>
-  <option value="3">Columbia Valley</option>
-  <option value="4">Comox Valley</option>
-  <option value="5">Cowichan Valley</option>
-  <option value="6">Daajing Giids (Haida Gwaii)</option>
-  <option value="7">Dawson Creek</option>
-  <option value="8">Fraser Valley</option>
-  <option value="9">Golden</option>
-  <option value="10">Grand Forks</option>
-  <option value="11">Kamloops</option>
-  <option value="12">Kelowna</option>
-  <option value="13">Nanaimo</option>
-  <option value="14">Nelson</option>
-  <option value="15">Penticton</option>
-  <option value="16">Port Hardy</option>
-  <option value="17">Powell River</option>
-  <option value="18">Prince George</option>
-  <option value="19">Revelstoke</option>
-  <option value="20">Salt Spring Island</option>
-  <option value="21">Squamish</option>
-  <option value="22">Sunshine Coast</option>
-  <option value="23">Trail</option>
-  <option value="24">Whistler</option>
-</select>
-</h3>
-</div>
-
-<h2 class="sectionHeading">Living Wage Rate for this Community: <span id="livingWageRate"></span></h2>
-
-<div id="selectors">
-
-<div class="section">
-<h2>Existing Wages</h2>
-<div class="selector" id="wageSelector">
-<p>Enter the hourly wage of your lowest paid member of staff: <br/><span class="currencyinput">$<input type="number" name="lowestWage" id="lowestWage" onChange="calculateValues()" min=17.85 step="any" value="17.85" onfocusout="enforceMinMax(this)"/><span></p>
-</div>
-</div>
-
-<div class="section">
-  <h2>Health Benefits</h2>
-<div class="selector" id="healthSelector">
-<p>Please select what percentage of extended health premiums is covered by the employer:<br />
-<select name="healthBenefits" id="healthBenefits" onChange="calculateValues()">
-  <option value=0>0% coverage</option>
-  <option value=25>25% coverage</option>
-  <option value=50>50% coverage</option>
-  <option value=70>70% coverage</option>
-  <option value=75>75% coverage</option>
-  <option value=80>80% coverage</option>
-  <option value=100>100% coverage</option>
-</select></p>
-  <h3>Calculated hourly benefit amount - extended health and dental: <span id="benefitRateHealth"></span></h3>
-  </div>
-
-  <div class="selector" id="hbaSelector">
-<p>Enter the value of your annual Health Benefits Account:<br />
-  <span class="currencyinput">$<input type="number" name="hbaBenefits" id="hbaBenefits" onChange="calculateValues()" value="0" min="0" onfocusout="enforceMinMax(this)"/></span></p>
-     <h3>Calculated hourly benefit amount - Health Benefits Account: <span id="benefitRateHBA"></span></h3>
-   </div>
-   <p id="healthDisclaimer">Please Note: The contribution that health benefits can make to this calculation has been capped at the value of 100% employer health coverage, in this case <span id="maxHealthValue"></span> per hour. If you have entered health benefits as both a percentage and a Health Benefits Account, the above figures may not match the final calculation shown here.</p>
- </div>
-
- <div class="section">
-   <h2>Additional Paid Leave</h2>
-  <div class="selector" id="vacationSelector">
-<p>Number of days offered of paid vacation, sick leave, personal days etc., beyond the statutory minimum (up to a maximum of ten days):<br />
-<select name="vacationBenefits" id="vacationBenefits" onChange="calculateValues()">
-  <option value="0">0 Days</option>
-  <option value="1">1 Day</option>
-  <option value="2">2 Days</option>
-  <option value="3">3 Days</option>
-  <option value="4">4 Days</option>
-  <option value="5">5 Days</option>
-  <option value="6">6 Days</option>
-  <option value="7">7 Days</option>
-  <option value="8">8 Days</option>
-  <option value="9">9 Days</option>
-  <option value="10">10 Days+</option>
-</select></p>
-    <h3>Calculated hourly benefit amount - extra sick pay or vacation days: <span id="benefitRateVacation"></span></h3>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>Other Benefits</h2>
-    <div class="selector" id="otherSelector">
-<p>Education/Training Benefits (up to $1,300 a year):<br />
-   <span class="currencyinput">$<input type="number" name="educationBenefits" id="educationBenefits" onChange="calculateValues()" value="0" max="1300" min="0" onfocusout="enforceMinMax(this)"/></span></p>
-<p>Savings (up to $500 a year). Savings contributions can be used to lower the living wage, so long as they are employer-only contributions and available for all staff:<br />
-   <span class="currencyinput">$<input type="number" name="savingsBenefits" id="savingsBenefits" onChange="calculateValues()" value="0" max="500" min="0" onfocusout="enforceMinMax(this)"/></span></p>
-<p>Telephone or internet (up to $1,200 a year):<br />
-   <span class="currencyinput">$<input type="number" name="phoneBenefits" id="phoneBenefits" onChange="calculateValues()" value="0" max="1200" min="0" onfocusout="enforceMinMax(this)"/></span></p>
-<p>Transit pass (up to $900 a year):<br />
-   <span class="currencyinput">$<input type="number" name="transitBenefits" id="transitBenefits" onChange="calculateValues()" value="0" max="900" min="0" onfocusout="enforceMinMax(this)"/></span></p>
-<p>Personal Spending Account (up to $500 a year):<br />
-   <span class="currencyinput">$<input type="number" name="psaBenefits" id="psaBenefits" onChange="calculateValues()" value="0" max="500" min="0" onfocusout="enforceMinMax(this)"/></span></p>
-<p>Cash Allowance (up to $5,000 a year):<br />
-   <span class="currencyinput">$<input type="number" name="cashBenefits" id="cashBenefits" onChange="calculateValues()" value="0" max="5000" min="0" onfocusout="enforceMinMax(this)"/></span></p>
-      <h3>Calculated hourly benefit amount - other taxable benefits: <span id="benefitRateOther"></span></h3>
-    </div>
-</div>
-</div>
-
-<div id="payRiseBox">
-<div><h3>Local Living Wage rate: <span id="livingWageRate2"></span></h3></div>
-<div><h3>Total hourly benefit amount: <span id="hourlyBenefitTotal"></span></h3></div>
-<div>
-  <ul>
-  <li><span id="benefitRateHealth2"></span> in health benefits.</li>
-  <li><span id="benefitRateVacation2"></span> in paid leave.</li>
-  <li><span id="benefitRateOther2"></span> in additional benefits.</li>
-  </ul>
-</div>
-<div><h3>Current total wage (wage + benefits): <span id="fullWage"></span></h3></div>
-<div><h3>Wage required (before benefits) to achieve local Living Wage: <span id="wageBenefitsGap"></span></h3></div>
-<div><h2>Pay rise needed: <span id="payRise"></span></h2></div>
-</div>
-<button onclick="copyText()" id="copyButton">Copy Information</button>
-</main>
-
-<p id="footer">© 2024 <a href="https://livingwagebc.ca">Living Wage BC</a>. Located on the unceded territories of the xʷməθkʷəy̓əm (Musqueam), Skwxwú7mesh (Squamish) and səl̓ílwətaʔɬ /Selilwitulh (Tsleil-Waututh) Nations. Living Wage BC is a program of Vancity Community Foundation. Calculation tool by <a href="https://robinwilde.me/" target="_blank">Robin Wilde</a>.</p>
+<p id="footer">© 2025 <a href="https://livingwagebc.ca">Living Wage BC</a>. Located on the unceded territories of the xʷməθkʷəy̓əm (Musqueam), Skwxwú7mesh (Squamish) and səl̓ílwətaʔɬ /Selilwitulh (Tsleil-Waututh) Nations. Living Wage BC is a program of Vancity Community Foundation. Calculation tool by <a href="https://robinwilde.me/" target="_blank">Robin Wilde</a>.</p>
 
 </body>
 </html>
+
 
